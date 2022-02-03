@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+$pk: #d982aa;
+$black: #333333;
+$white: #fff;
+$gray: #f4f4f4;
+$d-pk: #bc658d;
+$d-gray: #be96fd;
+$danger: #e90a0a;
+$green: #4be133;
+$shadow: 2px 0px 4px rgba(0, 0, 0, 0.12);
+
+@mixin flex-box($justify, $width) {
+  display: flex;
+  justify-content: $justify;
+  width: $width;
+}
+
+h4 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: $black;
+}
+h5 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: $black;
+}
+h6 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: $black;
+}
+hr {
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  margin: 20px 0;
+}
+a {
+  color: $black;
+}
+small {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: $black;
+}
+
+p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  text-transform: capitalize;
+  color: $black;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+  max-width: 100%;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  flex: none;
+
+  border: 0;
+  outline: 0;
+
+  margin: 8px 0px;
+}
+button {
+  height: 45px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  color: $black;
+}
+.hamburger div {
+  width: 20px;
+  height: 3px;
+  background-color: $black;
+  margin: 4.2px 0;
+  transition: all 0.3s ease;
+}
+.current-list {
+  color: white;
+  background-color: $pk;
+  svg {
+    path {
+      fill: $white;
+    }
+  }
+}
