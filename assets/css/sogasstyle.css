@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;0,900;1,200;1,300&display=swap');
+*,
+*::before,
+*::after {box-sizing: border-box;}
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #F4F4F4;
+    padding: 0px;
+    margin: 0px;
+}
+main .wrapper .mainnav{
+    height: 90px;
+    /* width: 100vw; */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+main .wrapper .mainnav img{
+    height: 45px;
+    align-self: center;
+}
+main .wrapper .mainnav .navlinks{
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .wrapper .mainnav .navlinks .navbuttons{
+    margin-left: 50px;
+    align-self: center;
+}
+main .wrapper .mainnav .navlinks .links{
+    align-self: center;
+}
+main .wrapper .mainnav .navlinks .navbuttons button{
+    margin-left: 25px;
+}
+main .wrapper .mainnav .navlinks .navbuttons .signup{
+    background-color: #ffffff;
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main .wrapper .mainnav .navlinks .navbuttons .login{
+    background-color: #d982aa;
+    border: none;
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main .wrapper .mainnav .navlinks .links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 25px;
+    
+}
+main .wrapper .image{
+    height: 509px;
+    /* width: 100vw; */
+    background-image: url(assets/img/circusbackground.png); background-size: cover; background-repeat: no-repeat;
+}
+main .wrapper .image .arrow{
+    height: 60px;
+    width: 60px;
+    margin-top: 25px;
+}
+main .wrapper .image a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+
+}
+main .wrapper .image span{
+    position: relative;
+    top: -20px;
+}
+
+main .wrapper .image a:hover{
+    font-size: 30px;
+    animation-name: size;
+    animation-duration: 200ms;
+}
+
+@keyframes size{
+    0%{ font-size: 20px;}
+    100%{font-size: 30px;}
+}
+main .wrapper .alltexts{ 
+    margin-left: 20px;
+    margin-right: 380px;
+}
+main .wrapper .alltexts .meta{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 600px;
+    align-items: baseline;
+}
+main .wrapper .alltexts .meta .location .locationIcon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5px;
+}
+main .wrapper .alltexts .meta .location .locationIcon img{
+    width: 25px;
+    height: 25px;
+}
+main .wrapper .alltexts .meta .location .locationIcon p{
+    line-height: 0px;
+}
+.demacation{
+    height: 1px;
+    width: auto;
+    background-color: darkgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+.demargin{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+main .wrapper .mainform{
+    background-color: #ffffff;
+    width: 80vw;
+    
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 100px;
+    border-radius: 5px;
+}
+main .wrapper .mainform .formheader{
+    text-align: center;
+}
+main .wrapper .mainform .radio input{
+    accent-color: #bc658d;
+}
+main .wrapper .mainform .inputs_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .wrapper .mainform .inputs_wrapper .inputs{
+    margin-top: 30px;
+}
+main .wrapper .mainform .inputs_wrapper .inputs input{
+    width: 435px;
+    height:45px;
+    background-color: #F4F4F4;
+    border: none;
+  
+}
+main .wrapper .mainform .buttondiv {
+    text-align: center;
+}
+main .wrapper .mainform .buttondiv .submit{
+    width: 440px;
+    background-color: #bc658d;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    cursor: pointer;  
+}
+footer{
+    background-color: #ffffff;
+    margin-top: 10vh;
+    padding: 50px 30px 0px 30px;
+}
+footer .footertop{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 500px;
+    margin-bottom: 30px;
+}
+footer .TextLogo{
+    line-height: 10px;
+    font-weight:500;
+}
+footer .TextLogo img{
+    height: 45px;
+}
+footer .lastfooter{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+footer .company{
+    line-height: 15px;
+}
+footer .lastfooter .copyright{
+    align-self: center;
+}
+footer .lastfooter .social{
+    align-self: center;
+}
+footer .lastfooter .social img{
+    width: 20px;
+    margin-left: 20px;
+    
+}
