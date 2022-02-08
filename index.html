@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" href="assets/scss/style.css" />
   </head>
   <body>
     <section class="page_lens">
@@ -450,7 +451,7 @@
         <div class="backdrop">
           <div class="wrap">
             <h2>Create Events</h2>
-            <form action="index" method="get">
+            <form action="index.html" method="get">
               <label for="text">Tittle</label>
               <input type="text" />
               <label for="textarea">Description</label>
@@ -475,11 +476,25 @@
                 <h4>Add Images</h4>
                 <p>Upload cover image for the banner (1080 by 240).</p>
                 <div class="file">
-                  <label for="file">
-                    <input type="file" />
+                  <label for="file" class="faint">
+                    <input
+                      type="file"
+                      id="img_changer"
+                      onchange="readFile();"
+                    />
+                    <img src="images/bx_bxs-image-add.svg" class="add_here" />
                   </label>
-                  <img src="images/img4.png" alt="" />
+                  <img
+                    src="images/img2.png"
+                    alt="yes,just preview the image here"
+                    id="result"
+                  />
                 </div>
+              </div>
+
+              <div class="submission">
+                <button type="submit" class="b_pnk">Create</button>
+                <h3 class="b_transparent">Cancel</h3>
               </div>
             </form>
           </div>
@@ -487,7 +502,31 @@
       </div>
       <!-- OVERLAY ENDS -->
     </section>
-    <script src="navlinks.js"></script>
-    <script src="script.js"></script>
+
+    <!--==============
+    JAVASCRIPT DUPLEX
+    =============== -->
+    <script src="assets/js/navlinks.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/form.js"></script>
+
+    <!-- This event trigger the images Selection -->
+    <script>
+      function readFile() {
+        var reader = new FileReader();
+        var file = document.querySelector("#img_changer").files[0];
+
+        reader.onload = function (e) {
+          document.querySelector("#result").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+
+        if (files[0].size > 2097152) {
+          alert("File is too big!");
+
+          this.value = "";
+        }
+      }
+    </script>
   </body>
 </html>

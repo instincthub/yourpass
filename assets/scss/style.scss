@@ -338,10 +338,11 @@ nav {
 // OVERLAY FOR ADDING EVENTS FORM AND UPLOAD IMAGE
 // ==================================================
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
-  // display: none;
+  display: none;
   right: 0;
+  transition: all 0.3s ease;
   width: 100%;
   .backdrop {
     padding: 135px 20px;
@@ -393,6 +394,94 @@ nav {
               right: 0;
               top: 0;
             }
+          }
+        }
+        // UPLOAD
+        .upload {
+          h4 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            &::after {
+              content: "*";
+              color: red;
+            }
+          }
+          p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+
+            color: rgba(51, 51, 51, 0.8);
+            opacity: 0.8;
+          }
+          .file {
+            display: flex;
+            justify-content: space-between;
+            .faint {
+              position: relative;
+              background: $gray;
+              height: 100px;
+              display: block;
+              width: 100px;
+              border-radius: 5px;
+              margin-top: 25px;
+              input {
+                width: 100px;
+                cursor: pointer;
+                height: 100px;
+                opacity: 0;
+              }
+              .add_here {
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                top: 29px;
+                left: 34px;
+                margin: 0;
+              }
+            }
+            img {
+              width: 170px;
+              height: 120px;
+              border-radius: 5px;
+              object-fit: cover;
+
+              margin-top: 17px;
+            }
+          }
+        }
+
+        .submission {
+          .b_pnk {
+            background-color: $pk;
+            margin-top: 50px;
+            color: $white;
+            width: 100%;
+            height: 45px;
+            font-weight: 700;
+          }
+          .b_transparent {
+            background-color: transparent;
+            margin-top: 30px;
+            width: 100%;
+            height: 45px;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 22px;
+            text-decoration-line: underline;
+            color: rgba(44, 51, 58, 0.8);
+            text-align: center;
+            opacity: 0.8;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            // background-color: transparent;
+            border-radius: 5px;
           }
         }
       }
@@ -728,7 +817,7 @@ nav {
     display: none;
   }
   .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 90%;
@@ -939,7 +1028,7 @@ nav {
   }
 
   .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 80%;
