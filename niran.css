@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background-color: #f4f4f4;
+}
+
+/* Nav */
+.yourpass{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav{
+  background-color: #ffffff;
+  width: 100%;
+  padding: 15px;
+}
+
+h1{
+  display: inline-block;
+  margin: 0px 0px 10px -10px;
+}
+
+.p{
+  color: #d982aa;
+  margin-left: 0px;
+}
+
+.why{
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  margin: 0px -10px 10px 0px;
+}
+/* Nav ends */
+
+/* Our events */
+.ourevents{
+  height: 360px;
+  width: 100%;
+  background-image: url(assets/img/circusbackground.png);
+  color: white;
+  margin-top: 0px;
+  position: relative;
+  text-align: center;
+}
+
+h2{
+  font-size: 28px;
+  margin: 90px 0px 70px 120px;
+  position: absolute;
+}
+
+.ourevents p{
+  width: 70%;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 150px 0px 70px 65px;
+  position: absolute;
+}
+
+.lagos{
+  position: absolute;
+  height: 35px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  bottom: 30px;
+  right: 10px;
+  border-radius: 3px;
+}
+
+.drop_down{
+  height: 4px;
+  width: 6px;
+  margin: 15px 20px 0px 70px;
+}
+
+.lagos p{
+  font-size: 13px;
+  margin: 9px 0px 0px 7px;
+}
+/* Our Events end */
+
+/* Main */
+.main{
+  margin-top: 60px;
+}
+
+.rec{
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.box{
+  height: 360px;
+  width: 90%;
+  margin: 20px auto 10px;
+  box-shadow: 0px 0px 2px rgba(0 0 0/0.2);
+}
+
+
+.one{
+  margin-top: 40px;
+}
+
+.main .box p:nth-child(1){
+  font-weight: bold;
+}
+
+.main .box p:nth-child(2){
+  font-weight:normal;
+}
+
+
+.one{
+  position: relative;
+}
+
+.one img{
+  height: 120px;
+  width: 100%;
+  position: absolute;
+}
+
+.main .one p:nth-child(1){
+  font-weight: bolder;
+  margin: 200px 40px 0px 20px;
+  /* top: 300px; */
+  position: absolute;
+}
+
+.main .one p:nth-child(2){
+  font-weight:normal;
+  margin: 250px 40px 70px 20px;
+  font-size: 13px;
+  position: absolute;
+}
