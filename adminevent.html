@@ -23,7 +23,7 @@
 
         <ul class="navlinks">
           <div class="avatar hod">
-            <img src="images/dummy avatar.jpg" alt="avatar" />
+            <img src="images/main_p.jpg" alt="avatar" />
             <h3>Noah Olatoye <br /><span>Admin</span></h3>
           </div>
 
@@ -140,9 +140,11 @@
       <div class="main_container">
         <div class="nav2">
           <input
-            type="search"
+            type="text"
             placeholder="Search event"
             class="search_field"
+            id="eventinput"
+            onkeyup="searchEvents()"
           />
           <div class="avatar_bell">
             <img src="images/bell.svg" alt="notification on arrival" />
@@ -178,45 +180,82 @@
       <!--=============
         EVENT CARDS
         ============== -->
-      <section class="e_cards container">
+      <section class="e_cards container" id="myCards">
         <!--Main CARD-->
         <div class="main_card">
-          <img src="images/img3.png" alt="" />
-          <div class="card_d">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              dolorum earum eius culpa maxime...
-            </p>
+          <a href="#">
+            <img src="images/gold_cliff.jpg" alt="" />
+            <div class="card_d">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                dolorum earum eius culpa maxime...
+              </p>
 
-            <div class="ff_sort">
-              <figure>
-                <img src="images/calendar.svg" alt="" />
-                <h4>Dec 20,2022</h4>
-              </figure>
-              <figure>
-                <img src="images/calendar.svg" alt="" />
-                <h4>Lagos</h4>
-              </figure>
-              <figure>
-                <img src="images/calendar.svg" alt="" />
-                <h4>10,000 Seats</h4>
-              </figure>
-            </div>
+              <div class="ff_sort">
+                <figure>
+                  <img src="images/calendar.svg" alt="" />
+                  <h4>Dec 28,2022</h4>
+                </figure>
+                <figure>
+                  <img src="images/calendar.svg" alt="" />
+                  <h4>Abuja</h4>
+                </figure>
+                <figure>
+                  <img src="images/calendar.svg" alt="" />
+                  <h4>10,000 Seats</h4>
+                </figure>
+              </div>
 
-            <!-- 2img lap on each other -->
-            <div class="lap">
-              <img src="images/female_avatar.jpg" />
-              <img src="images/male_avatar.jpg" class="f_lap" />
+              <!-- 2img lap on each other -->
+              <div class="lap">
+                <img src="images/lap1.jpg" />
+                <img src="images/lap2.jpg" class="f_lap" />
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <!--Main Cards ENDS-->
+
+        <!--Main CARD-->
+        <div class="main_card">
+          <a href="#">
+            <img src="images/Pray.jpg" alt="" />
+            <div class="card_d">
+              <h3>What if i don't sit amet consectetur adipisicing elit.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                dolorum earum eius culpa maxime...
+              </p>
+
+              <div class="ff_sort">
+                <figure>
+                  <img src="images/calendar.svg" alt="" />
+                  <h4>Dec 20,2022</h4>
+                </figure>
+                <figure>
+                  <img src="images/calendar.svg" alt="" />
+                  <h4>Lagos</h4>
+                </figure>
+                <figure>
+                  <img src="images/calendar.svg" alt="" />
+                  <h4>10,000 Seats</h4>
+                </figure>
+              </div>
+
+              <!-- 2img lap on each other -->
+              <div class="lap">
+                <img src="images/lap1.jpg" />
+                <img src="images/lap2.jpg" class="f_lap" />
+              </div>
+            </div>
+          </a>
+        </div>
+
         <!--Main CARD-->
         <div class="main_card">
           <img src="images/img4.png" alt="" />
           <div class="card_d">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3>Break me ipsum dolor sit amet consectetur adipisicing elit.</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
               dolorum earum eius culpa maxime...
@@ -239,12 +278,47 @@
 
             <!-- 2img lap on each other -->
             <div class="lap">
-              <img src="images/female_avatar.jpg" />
-              <img src="images/male_avatar.jpg" class="f_lap" />
+              <img src="images/lap1.jpg" />
+              <img src="images/lap2.jpg" class="f_lap" />
             </div>
           </div>
         </div>
-        <!--Main Cards ENDS-->
+
+        <!--Main CARD-->
+        <div class="main_card">
+          <img src="images/img1.png" alt="" />
+          <div class="card_d">
+            <h3>
+              Contol this ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              dolorum earum eius culpa maxime...
+            </p>
+
+            <div class="ff_sort">
+              <figure>
+                <img src="images/calendar.svg" alt="" />
+                <h4>Dec 20,2022</h4>
+              </figure>
+              <figure>
+                <img src="images/calendar.svg" alt="" />
+                <h4>Lagos</h4>
+              </figure>
+              <figure>
+                <img src="images/calendar.svg" alt="" />
+                <h4>10,000 Seats</h4>
+              </figure>
+            </div>
+
+            <!-- 2img lap on each other -->
+            <div class="lap">
+              <img src="images/lap1.jpg" />
+              <img src="images/lap2.jpg" class="f_lap" />
+            </div>
+          </div>
+        </div>
+
         <!--Main CARD-->
         <div class="main_card">
           <img src="images/img1.png" alt="" />
@@ -272,12 +346,44 @@
 
             <!-- 2img lap on each other -->
             <div class="lap">
-              <img src="images/female_avatar.jpg" />
-              <img src="images/male_avatar.jpg" class="f_lap" />
+              <img src="images/lap1.jpg" />
+              <img src="images/lap2.jpg" class="f_lap" />
             </div>
           </div>
         </div>
-        <!--Main Cards ENDS-->
+
+        <!--Main CARD-->
+        <div class="main_card">
+          <img src="images/img1.png" alt="" />
+          <div class="card_d">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              dolorum earum eius culpa maxime...
+            </p>
+
+            <div class="ff_sort">
+              <figure>
+                <img src="images/calendar.svg" alt="" />
+                <h4>Dec 20,2022</h4>
+              </figure>
+              <figure>
+                <img src="images/calendar.svg" alt="" />
+                <h4>Lagos</h4>
+              </figure>
+              <figure>
+                <img src="images/calendar.svg" alt="" />
+                <h4>10,000 Seats</h4>
+              </figure>
+            </div>
+
+            <!-- 2img lap on each other -->
+            <div class="lap">
+              <img src="images/lap1.jpg" />
+              <img src="images/lap2.jpg" class="f_lap" />
+            </div>
+          </div>
+        </div>
       </section>
     </section>
 
@@ -287,5 +393,6 @@
     <script src="assets/js/navlinks.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/form.js"></script>
+    <script src="assets/js/filter.js"></script>
   </body>
 </html>
