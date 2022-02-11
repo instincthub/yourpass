@@ -241,6 +241,10 @@ nav .hamburger {
   margin-top: 7px;
 }
 
+.container {
+  padding: 0 20px;
+}
+
 #events {
   position: absolute;
   right: 20px;
@@ -645,9 +649,6 @@ nav .hamburger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .overlay .backdrop .wrap form .upload .file .faint {
@@ -656,6 +657,7 @@ nav .hamburger {
   height: 100px;
   display: block;
   width: 100px;
+  margin-right: 70px;
   border-radius: 5px;
   margin-top: 25px;
 }
@@ -714,6 +716,171 @@ nav .hamburger {
 
 .overlay.showevent {
   display: block;
+}
+
+.s_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mm_event {
+  margin-top: 50px;
+}
+
+.mm_event .event_txt h4 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.mm_event .event_txt p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.mm_event .event_txt p span {
+  font-weight: 700;
+}
+
+.mm_event .f_sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mm_event .f_sort label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 30px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+.mm_event .f_sort select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 13px;
+  width: 150px;
+  border: 0;
+  height: 42px;
+  left: 200px;
+  top: 0px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+.e_cards {
+  margin-top: 60px;
+}
+
+.e_cards .main_card {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.e_cards .main_card img {
+  border-radius: 5px 5px 0px 0px;
+  height: 178px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.e_cards .main_card .card_d {
+  padding: 22px 20px;
+}
+
+.e_cards .main_card .card_d h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.e_cards .main_card .card_d p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.e_cards .main_card .card_d .ff_sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.e_cards .main_card .card_d .ff_sort figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.e_cards .main_card .card_d .ff_sort figure img {
+  width: 22px;
+  margin-right: 10px;
+  height: 22px;
+}
+
+.e_cards .main_card .card_d .ff_sort figure h4 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  margin-top: 5px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.e_cards .main_card .card_d .lap {
+  margin-top: 50px;
+}
+
+.e_cards .main_card .card_d .lap img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.e_cards .main_card .card_d .lap .f_lap {
+  position: relative;
+  left: -15px;
 }
 
 @media (max-width: 767px) {
@@ -796,12 +963,20 @@ nav .hamburger {
   .g_list {
     display: none;
   }
+  .mm_event .f_sort {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .current-list {
     background: transparent;
     color: #d982aa;
   }
   .current-list svg path {
     fill: #d982aa;
+  }
+  .f_sort {
+    width: 100%;
   }
 }
 
@@ -888,14 +1063,14 @@ nav .hamburger {
   }
   .s_step .aside_wrapper {
     margin-left: 71px;
-    margin-top: 942px;
-    width: 86%;
+    margin-top: 1003px;
+    width: 85%;
     position: absolute;
     right: 20px;
   }
   .s_step .map {
-    width: 86%;
-    top: 1190px;
+    width: 85%;
+    top: 1256px;
     position: absolute;
     right: 20px;
     bottom: 7px;
@@ -928,6 +1103,11 @@ nav .hamburger {
     font-size: 20px;
     margin-top: 40px;
     line-height: 27px;
+  }
+  .main_container .nav2 .search_field {
+    width: 25%;
+    background-color: #f4f4f4;
+    margin: 0;
   }
   .main_container .nav2 .avatar_bell {
     display: -webkit-box;
@@ -1064,6 +1244,34 @@ nav .hamburger {
   .overlay .backdrop .date_time label {
     width: 45%;
   }
+  .mm_event {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    top: 73px;
+  }
+  .e_cards {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    top: 200px;
+  }
+}
+
+@media (min-width: 660px) {
+  .e_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .e_cards .main_card {
+    width: 48.5%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1073,6 +1281,13 @@ nav .hamburger {
 }
 
 @media (min-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+  .mm_event {
+    width: 80%;
+    top: 90px;
+  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1255,11 +1470,40 @@ nav .hamburger {
   .s_step .aside_wrapper .upcoming .wrap_event .event {
     width: 100%;
   }
+  .overlay .backdrop {
+    padding: 135px 130px;
+  }
+  .overlay .backdrop .wrap {
+    padding: 40px 25px;
+  }
+  .submission {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .overlay .backdrop .wrap form .submission .b_pnk {
+    width: 70%;
+  }
+  .overlay .backdrop .wrap form .submission .b_transparent {
+    margin-top: 60px;
+  }
   .overlay {
     position: absolute;
     top: 0;
     right: 0;
     width: 80%;
+  }
+  .e_cards {
+    width: 80%;
+  }
+  .e_cards .main_card {
+    width: 47%;
+  }
+}
+
+@media (min-width: 1124px) {
+  .e_cards .main_card {
+    width: 32%;
   }
 }
 
