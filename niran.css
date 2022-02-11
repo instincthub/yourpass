@@ -9,7 +9,6 @@ body{
   background-color: #f4f4f4;
 }
 
-/* Nav */
 .yourpass{
   display: flex;
   justify-content: space-between;
@@ -37,17 +36,13 @@ h1{
   background-color: green;
   margin: 0px -10px 10px 0px;
 }
-/* Nav ends */
 
-/* Our events */
 .ourevents{
   height: 360px;
   width: 100%;
-  background-image: url(assets/img/circusbackground.png);
   color: white;
   margin-top: 0px;
   position: relative;
-  text-align: center;
 }
 
 h2{
@@ -61,7 +56,6 @@ h2{
   font-weight: normal;
   font-size: 14px;
   margin: 150px 0px 70px 65px;
-  position: absolute;
 }
 
 .lagos{
@@ -85,9 +79,7 @@ h2{
   font-size: 13px;
   margin: 9px 0px 0px 7px;
 }
-/* Our Events end */
 
-/* Main */
 .main{
   margin-top: 60px;
 }
@@ -128,12 +120,6 @@ h2{
   position: absolute;
 }
 
-.main .one p:nth-child(1){
-  font-weight: bolder;
-  margin: 200px 40px 0px 20px;
-  /* top: 300px; */
-  position: absolute;
-}
 
 .main .one p:nth-child(2){
   font-weight:normal;
