@@ -851,7 +851,7 @@ nav .hamburger {
 
 .e_cards .main_card .card_d .ff_sort figure img {
   width: 22px;
-  margin-right: 10px;
+  margin-right: 2px;
   height: 22px;
 }
 
@@ -881,6 +881,123 @@ nav .hamburger {
 .e_cards .main_card .card_d .lap .f_lap {
   position: relative;
   left: -15px;
+}
+
+.detail_wrap .back-img a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.014em;
+  text-transform: capitalize;
+}
+
+.detail_wrap .back-img a::before {
+  content: url("images/chevron_back.svg");
+  background-color: url(images/chevron_back.svg);
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.detail_wrap .back-img img {
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.detail_wrap .dts {
+  margin-top: 30px;
+  position: relative;
+}
+
+.detail_wrap .dts button {
+  background-color: #d982aa;
+  height: 45px;
+  border-radius: 5px;
+  opacity: 0.8;
+  width: 130px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  right: 0;
+  top: -70px;
+  color: #eeeeee;
+}
+
+.detail_wrap .dts button::before {
+  content: url("images/edit.svg");
+  position: relative;
+  z-index: 100000;
+  /*a number that's more than the modal box*/
+  left: -50px;
+  top: 10px;
+}
+
+.detail_wrap .dts h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 110px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.detail_wrap .dts h5 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.detail_wrap .dts .d_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detail_wrap .dts .d_date h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.detail_wrap .dts .d_date h4 span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 5px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.detail_wrap .dts .t_desc h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.detail_wrap .dts .t_desc p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.detail_wrap .dts .t_desc .more_p {
+  margin-top: 15px;
 }
 
 @media (max-width: 767px) {
