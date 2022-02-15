@@ -7,6 +7,8 @@
 
 body{
   background-color: #f4f4f4;
+  width: 100%;
+  margin: auto;
 }
 
 .yourpass{
@@ -14,10 +16,14 @@ body{
   justify-content: space-between;
 }
 
+span{
+  color: #bc658d;
+}
+
 nav{
   background-color: #ffffff;
   width: 100%;
-  padding: 15px;
+  padding: 15px 25px;
 }
 
 h1{
@@ -40,47 +46,288 @@ h1{
 .ourevents{
   height: 360px;
   width: 100%;
-  background-image: url(images/attendee.svg);
   color: white;
-  margin-top: 0px;
-  /* position: relative; */
-  text-align: center;
+  background: black;
+  background-image: url(images/unsplash_uf2nnANWa8Q.png);
+  position: relative;
 }
 
-h2{
+.ourevents h2{
+  position: absolute;
   text-align: center;
-  font-size: 25px;
-  margin: 100px 120px 70px 140px;
-  /* position: absolute; */
+  width: 100%;
+  font-size: 30px;
+  margin: 100px auto 90px;
 }
 
 .ourevents p{
+  position: absolute;
   text-align: center;
-  width: 70%;
+  width: 100%;
   font-weight: thin;
   font-size: 15px;
-  margin: 150px 0px 70px 65px;
-  /* position: absolute; */
+  margin: 150px 0px 0px;
 }
 
 .lagos{
-  /* position: absolute; */
+  position: absolute;
   height: 35px;
   width: 100px;
   background-color: white;
   color: black;
   bottom: 30px;
-  right: 10px;
+  right: 20px;
   border-radius: 3px;
 }
 
 .drop_down{
+  position: absolute;
   height: 4px;
   width: 6px;
-  margin: 15px 0px 0px 70px;
+  margin: 15px 0px 0px 15px;
 }
 
 .lagos p{
   font-size: 13px;
-  margin: 9px 0px 0px 7px;
+  margin: 9px 0px 0px -5px;
 }
+
+.main1{
+  margin-top: 60px;
+}
+
+.rec{
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.box{
+ height: 360px;
+ width: 90%;
+ margin: 25px auto 0px;
+ box-shadow: 0px 0px 2px rgba(0 0 0 /0.2);
+ border-radius: 5px 5px 0px 0px;
+ background-color: #ffffff;
+}
+
+.box img{
+  /* height: 23vh;*/
+  height: 150px;
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.box p{
+  margin-left: 20px;
+}
+
+.box p:nth-child(2){
+  font-weight: bold;
+}
+
+.dls{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+}
+
+.date{
+  display: flex;
+}
+
+.dls .date img{
+  height: 18px;
+  width: 18px;
+}
+
+.dls .date p{
+  font-size: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.location{
+  display: flex;
+}
+
+.dls .location img{
+  height: 18px;
+  width: 18px;
+}
+
+.dls .location p{
+  font-size: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.seats{
+  display: flex;
+}
+
+.dls .seats img{
+  height: 18px;
+  width: 18px;
+}
+
+.dls .seats p{
+  font-size: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.main2{
+  margin-top: 3em;
+}
+
+.upcoming{
+  font-weight: bold;
+  margin-left: 1.3em;
+}
+
+.icons_numbers{
+  margin-top: 5em;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fdash{
+  background-color: #d982aa;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+.numbers{
+  margin-top: -6px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.one_line .one{
+  font-weight: bold;
+}
+
+.line{
+  height: 2px;
+  width: 17px;
+  border-radius: 5px;
+  margin-top: -8px;
+  margin-left: -5px;
+  background-color: #d982aa;
+}
+
+.dots{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -2px;
+  font-size: bold;
+}
+
+.dots p{
+  margin-left: 2px;
+}
+
+.sdash{
+  background-color: #d982aa;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  padding: 6px;
+  transform: rotate(180deg);
+}
+
+.end{
+  width: 100%;
+  margin: 4em 0em 0em;
+  padding: 3em 1em 0em;
+  background: #ffffff;
+}
+
+.end .last1 p{
+  margin-top: -.9em;
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.last2{
+  margin-top: 2em;
+}
+
+.last2 h3{
+  font-size: 15px;
+}
+
+.last2 p{
+  font-size: 11px;
+  margin-top: -5px;
+}
+
+hr{
+  background: #bc658d;
+  opacity: 30%;
+  margin-top: 1.2em;
+}
+
+.last3{
+  margin-top: .8em;
+}
+
+.last3 p{
+  font-size: 11px;
+  margin-top: -15px;
+}
+
+.last4{
+  margin-top: 2.5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.licon{
+  height: .9em;
+  width: .9em;
+  margin: .8em;
+}
+
+
+.last5{
+  display: flex;
+  justify-content: space-evenly;
+  margin: .8em auto 1em;
+}
+
+.cicon{
+  margin-left: -10px;
+}
+
+.line2{
+  height: 13px;
+  width: 1.6px;
+  background: black;
+  margin-top: 15px;
+  margin-left: -25px;
+  border-radius: 5px;
+}
+
+.last5 p{
+  font-size: 13px;
+}
+
+.pp{
+  margin-top: 13px;
+  margin-left: -30px;
+}
+
+.lp{
+  margin-top: 13px;
+  margin-left: -23px;
+}
+/* @media screen and (max-width: 800px){
+} */
