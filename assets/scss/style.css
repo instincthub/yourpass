@@ -888,15 +888,18 @@ nav .hamburger {
   font-size: 16px;
   line-height: 22px;
   text-align: right;
+  margin-left: 30px;
   letter-spacing: 0.014em;
   text-transform: capitalize;
 }
 
 .detail_wrap .back-img a::before {
-  content: url("images/chevron_back.svg");
-  background-color: url(images/chevron_back.svg);
+  content: url("../../images/chevron_back.svg");
   margin-right: 10px;
   width: 40px;
+  position: absolute;
+  left: 0;
+  top: 1px;
   height: 40px;
 }
 
@@ -923,15 +926,14 @@ nav .hamburger {
   right: 0;
   top: -70px;
   color: #eeeeee;
+  padding-left: 15px;
 }
 
 .detail_wrap .dts button::before {
-  content: url("images/edit.svg");
-  position: relative;
-  z-index: 100000;
-  /*a number that's more than the modal box*/
-  left: -50px;
+  content: url("../../images/edit.svg");
+  left: 25px;
   top: 10px;
+  position: absolute;
 }
 
 .detail_wrap .dts h3 {
@@ -1381,6 +1383,11 @@ nav .hamburger {
   }
   .detail_wrap .d_date {
     width: 50%;
+  }
+  .detail_wrap .back-img img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

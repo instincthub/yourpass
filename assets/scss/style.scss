@@ -634,14 +634,17 @@ nav {
       font-size: 16px;
       line-height: 22px;
       text-align: right;
+      margin-left: 30px;
       letter-spacing: 0.014em;
       text-transform: capitalize;
       // margin-bottom: 30px;
       &::before {
-        content: url("images/chevron_back.svg");
-        background-color: url(images/chevron_back.svg);
+        content: url("../../images/chevron_back.svg");
         margin-right: 10px;
         width: 40px;
+        position: absolute;
+        left: 0;
+        top: 1px;
         height: 40px;
       }
     }
@@ -666,13 +669,12 @@ nav {
       right: 0;
       top: -70px;
       color: #eeeeee;
+      padding-left: 15px;
       &::before {
-        content: url("images/edit.svg");
-        position: relative;
-        // position:relative;
-        z-index: 100000; /*a number that's more than the modal box*/
-        left: -50px;
+        content: url("../../images/edit.svg");
+        left: 25px;
         top: 10px;
+        position: absolute;
       }
     }
     h3 {
@@ -1111,6 +1113,10 @@ nav {
     .d_date {
       width: 50%;
     }
+  }
+  .detail_wrap .back-img img {
+    height: 400px;
+    object-fit: cover;
   }
 }
 
