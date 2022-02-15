@@ -1,45 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
-body{
+body {
   background-color: #f4f4f4;
   width: 100%;
   margin: auto;
 }
 
-.yourpass{
+.yourpass {
   display: flex;
   justify-content: space-between;
 }
 
-nav{
+nav {
   background-color: #ffffff;
   width: 100%;
   padding: 15px;
 }
 
-h1{
+h1 {
   display: inline-block;
   margin: 0px 0px 10px -10px;
 }
 
-.p{
+.p {
   color: #d982aa;
   margin-left: 0px;
 }
 
-.why{
+.why {
   height: 30px;
   width: 30px;
   background-color: green;
   margin: 0px -10px 10px 0px;
 }
 
-.ourevents{
+.ourevents {
   height: 360px;
   width: 100%;
   color: white;
@@ -47,7 +47,7 @@ h1{
   position: relative;
 }
 
-.ourevents h2{
+.ourevents h2 {
   position: absolute;
   text-align: center;
   width: 50%;
@@ -56,7 +56,7 @@ h1{
   margin-left: 90px;
 }
 
-.ourevents p{
+.ourevents p {
   position: absolute;
   text-align: center;
   width: 70%;
@@ -65,7 +65,7 @@ h1{
   margin: 150px 0px 70px 65px;
 }
 
-.lagos{
+.lagos {
   position: absolute;
   height: 35px;
   width: 100px;
@@ -76,99 +76,99 @@ h1{
   border-radius: 3px;
 }
 
-.drop_down{
+.drop_down {
   height: 4px;
   width: 6px;
   margin: 15px 0px 0px 70px;
 }
 
-.lagos p{
+.lagos p {
   font-size: 13px;
   margin: 9px 0px 0px 7px;
 }
 
-.main{
+.main {
   margin-top: 60px;
 }
 
-.rec{
+.rec {
   font-weight: bold;
   margin-left: 20px;
 }
 
-.box{
- height: 360px;
- width: 90%;
- margin: 25px auto 0px;
- box-shadow: 0px 0px 2px rgba(0 0 0 /0.2);
- border-radius: 10px 10px 0px 0px;
+.box {
+  height: 360px;
+  width: 90%;
+  margin: 25px auto 0px;
+  box-shadow: 0px 0px 2px rgba(0 0 0 /0.2);
+  border-radius: 10px 10px 0px 0px;
 }
 
-.box img{
+.box img {
   height: 40vh;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
-.box p{
+.box p {
   margin-left: 20px;
 }
 
-.box p:nth-child(2){
+.box p:nth-child(2) {
   font-weight: bold;
 }
 
-.dls{
+.dls {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   margin: 10px 0px 0px -10px;
 }
 
-.date{
+.date {
   display: flex;
 }
 
-.dls .date img{
+.dls .date img {
   height: 18px;
   width: 18px;
 }
 
-.dls .date p{
+.dls .date p {
   font-size: 10px;
   margin-left: 3px;
   margin-top: 3px;
 }
 
-.location{
+.location {
   display: flex;
 }
 
-.dls .location img{
+.dls .location img {
   height: 18px;
   width: 18px;
 }
 
-.dls .location p{
+.dls .location p {
   font-size: 10px;
   margin-left: 3px;
   margin-top: 3px;
 }
 
-.seats{
+.seats {
   display: flex;
 }
 
-.dls .seats img{
+.dls .seats img {
   height: 18px;
   width: 18px;
 }
 
-.dls .seats p{
+.dls .seats p {
   font-size: 10px;
   margin-left: 3px;
   margin-top: 3px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 }

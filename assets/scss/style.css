@@ -1373,6 +1373,15 @@ nav .hamburger {
     right: 0;
     top: 200px;
   }
+  .detail_wrap {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    top: 135px;
+  }
+  .detail_wrap .d_date {
+    width: 50%;
+  }
 }
 
 @media (min-width: 660px) {
@@ -1615,6 +1624,9 @@ nav .hamburger {
   }
   .e_cards .main_card {
     width: 47%;
+  }
+  .detail_wrap {
+    width: 80%;
   }
 }
 
