@@ -634,10 +634,10 @@ nav {
       font-size: 16px;
       line-height: 22px;
       text-align: right;
-      margin-left: 30px;
+      margin-left: 20px;
       letter-spacing: 0.014em;
       text-transform: capitalize;
-      // margin-bottom: 30px;
+
       &::before {
         content: url("../../images/chevron_back.svg");
         margin-right: 10px;
@@ -651,12 +651,14 @@ nav {
     img {
       border-radius: 5px;
       margin-top: 20px;
+      height: 250px;
+      object-fit: cover;
     }
   }
   .dts {
     margin-top: 30px;
     position: relative;
-    button {
+    .update {
       background-color: $pk;
       height: 45px;
       border-radius: 5px;
@@ -675,6 +677,9 @@ nav {
         left: 25px;
         top: 10px;
         position: absolute;
+      }
+      a {
+        color: $white;
       }
     }
     h3 {
@@ -697,8 +702,8 @@ nav {
       display: flex;
       justify-content: space-between;
       h4 {
-        font-weight: bold;
-        font-size: 18px;
+        font-weight: 600;
+        font-size: 16px;
         margin-top: 25px;
         margin-bottom: 50px;
         line-height: 25px;
@@ -735,7 +740,90 @@ nav {
     }
   }
 }
+.rr_req {
+  form {
+    .back_ {
+      a {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        margin-left: 20px;
+        letter-spacing: 0.014em;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        &::before {
+          content: url("../../images/chevron_back.svg");
+          margin-right: 10px;
+          width: 40px;
+          position: absolute;
+          left: 0;
+          top: 1px;
+          height: 40px;
+        }
+      }
 
+      // img {
+      //   height: 250px;
+      // }
+    }
+    .dd_entry {
+      position: relative;
+      margin-top: 100px;
+      button {
+        background-color: $pk;
+        height: 45px;
+        border-radius: 5px;
+        opacity: 0.8;
+        width: 130px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        position: absolute;
+        right: 0;
+        top: -70px;
+        color: #eeeeee;
+      }
+      label {
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+        text-transform: capitalize;
+        textarea {
+          width: 100%;
+          background-color: $white;
+          border-radius: 5px;
+          border: 0;
+          height: 145px;
+          margin-top: 10px;
+          padding: 15px;
+          margin-bottom: 40px;
+        }
+        input {
+          margin-bottom: 30px;
+        }
+        .descript {
+          max-width: 100%;
+          background-color: $white;
+          border-radius: 5px;
+          border: 0;
+          height: 205px;
+          margin-top: 10px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    img {
+      margin-top: 30px;
+      border-radius: 5px;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
 // MAX WIDTH STARTs FROM HERE
 @media (max-width: 767px) {
   nav {
@@ -834,6 +922,9 @@ nav {
   .f_sort {
     width: 100%;
   }
+  .gh2 {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -923,7 +1014,16 @@ nav {
     bottom: 7px;
     margin-top: 20px;
   }
-
+  .fancy_crab {
+    display: block;
+    label {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: capitalize;
+      margin-top: 10px;
+    }
+  }
   //================ MAIN_CONTAINER 768PX
   .main_container {
     display: flex;
@@ -1067,6 +1167,7 @@ nav {
   .s_step .tt-1 ul li .tt-table {
     width: 64%;
   }
+
   .s_step .aside_wrapper .upcoming .wrap_event .event {
     width: 33%;
   }
@@ -1116,7 +1217,19 @@ nav {
   }
   .detail_wrap .back-img img {
     height: 400px;
-    width: auto;
+
+    object-fit: cover;
+  }
+  .req {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    label {
+      width: 30%;
+    }
+  }
+  .rr_req form img {
+    height: 250px;
     object-fit: cover;
   }
 }

@@ -888,7 +888,7 @@ nav .hamburger {
   font-size: 16px;
   line-height: 22px;
   text-align: right;
-  margin-left: 30px;
+  margin-left: 20px;
   letter-spacing: 0.014em;
   text-transform: capitalize;
 }
@@ -906,6 +906,9 @@ nav .hamburger {
 .detail_wrap .back-img img {
   border-radius: 5px;
   margin-top: 20px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .detail_wrap .dts {
@@ -913,7 +916,7 @@ nav .hamburger {
   position: relative;
 }
 
-.detail_wrap .dts button {
+.detail_wrap .dts .update {
   background-color: #d982aa;
   height: 45px;
   border-radius: 5px;
@@ -929,11 +932,15 @@ nav .hamburger {
   padding-left: 15px;
 }
 
-.detail_wrap .dts button::before {
+.detail_wrap .dts .update::before {
   content: url("../../images/edit.svg");
   left: 25px;
   top: 10px;
   position: absolute;
+}
+
+.detail_wrap .dts .update a {
+  color: #fff;
 }
 
 .detail_wrap .dts h3 {
@@ -964,8 +971,8 @@ nav .hamburger {
 }
 
 .detail_wrap .dts .d_date h4 {
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
   margin-top: 25px;
   margin-bottom: 50px;
   line-height: 25px;
@@ -1000,6 +1007,89 @@ nav .hamburger {
 
 .detail_wrap .dts .t_desc .more_p {
   margin-top: 15px;
+}
+
+.rr_req form .back_ a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  margin-left: 20px;
+  letter-spacing: 0.014em;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.rr_req form .back_ a::before {
+  content: url("../../images/chevron_back.svg");
+  margin-right: 10px;
+  width: 40px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  height: 40px;
+}
+
+.rr_req form .dd_entry {
+  position: relative;
+  margin-top: 100px;
+}
+
+.rr_req form .dd_entry button {
+  background-color: #d982aa;
+  height: 45px;
+  border-radius: 5px;
+  opacity: 0.8;
+  width: 130px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  right: 0;
+  top: -70px;
+  color: #eeeeee;
+}
+
+.rr_req form .dd_entry label {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.rr_req form .dd_entry label textarea {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0;
+  height: 145px;
+  margin-top: 10px;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.rr_req form .dd_entry label input {
+  margin-bottom: 30px;
+}
+
+.rr_req form .dd_entry label .descript {
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0;
+  height: 205px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.rr_req form img {
+  margin-top: 30px;
+  border-radius: 5px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 767px) {
@@ -1096,6 +1186,9 @@ nav .hamburger {
   }
   .f_sort {
     width: 100%;
+  }
+  .gh2 {
+    display: none;
   }
 }
 
@@ -1194,6 +1287,16 @@ nav .hamburger {
     right: 20px;
     bottom: 7px;
     margin-top: 20px;
+  }
+  .fancy_crab {
+    display: block;
+  }
+  .fancy_crab label {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin-top: 10px;
   }
   .main_container {
     display: -webkit-box;
@@ -1386,6 +1489,23 @@ nav .hamburger {
   }
   .detail_wrap .back-img img {
     height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .req {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .req label {
+    width: 30%;
+  }
+  .rr_req form img {
+    height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
   }
