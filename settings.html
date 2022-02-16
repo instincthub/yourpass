@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events Details - Information about each Events</title>
+    <title>Settings - Make Changes To Your Account</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +27,7 @@
             <h3>Noah Olatoye <br /><span>Admin</span></h3>
           </div>
 
-          <a href="adminevent.html" class="current-list">
+          <a href="adminevent.html" >
             <svg
               width="28"
               height="27"
@@ -103,7 +103,7 @@
             <h3>Attendee</h3>
           </a>
 
-          <a class="">
+          <a href="" class="current-list">
             <svg
               width="27"
               height="27"
@@ -154,70 +154,66 @@
       
       <!-- ===========
         CARD DETAILS
-    ====================== -->
+     ====================== -->
       <div class="container detail_wrap">
-        <div class="back-img">
-          <a href="adminevent.html">Back</a>
-          <img src="images/card4.png" />
-        </div>
+       <div class="tabs">
 
-        <!-- The Details -->
-        <div class="dts">
-          <a href="request_data.html"><button class="update"> Edit</button></a>
-          <h3>Events Overview</h3>
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            iusto corporis quod rerum enim eveniet minima dolor. Cum, quo
-            incidunt dignissimos nemo ratione soluta.
-          </h5>
+           <input type="radio" class="tabs_radio" name="settings" id="tab1" checked>
+           <label for="tab1" class="tabs_label">Account Settings</label>
+           <!-- FIRST TAB CONTENTS -->
+            <div class="t_content">
+               <form action="">
+                  <h3>Bio Data</h3>
 
-          <div class="d_date">
-            <h4>
-              Date <br />
-              <span>Dec 20,2022</span>
-            </h4>
-            <h4>
-              Location <br />
-              <span>Lagos</span>
-            </h4>
-            <h4>
-              Tickets <br />
-              <span>10,000 Seats</span>
-            </h4>
-          </div>
+                  <div class="ment">
+                      <label for="" >
+                          First name
+                          <input type="text">
+                      </label>
+                      <label for="" >
+                          Last name
+                          <input type="text">
+                      </label>
+                  </div>
 
-          <div class="t_desc">
-            <h4>Description</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam ullam velit cumque odio, esse consequuntur iste at
-              veniam sint ipsum. Excepturi blanditiis sit consectetur quibusdam
-              nesciunt, mollitia omnis. Labore, sit! Voluptatem consequatur
-              repellendus temporibus nulla distinctio tempore, aliquam harum ut
-              aspernatur inventore a natus vel accusamus eaque cumque animi
-              voluptatum iure commodi alias eius facere. Praesentium est
-              adipisci culpa officiis. Quo tenetur architecto quos
-              exercitationem cumque, quis corrupti in quia mollitia blanditiis
-              minima est ipsam magnam et eaque veritatis voluptate neque.
-              Adipisci eius omnis quos at, error recusandae consequatur nulla.
-              Impedit, vitae sit? Assumenda iste, itaque natus at, commodi eaque
-              eos aliquam, odit excepturi molestias pariatur quod. Sapiente,
-              nesciunt hic aliquid quo velit obcaecati quod, quas doloremque
-              animi rem asperiores! In repellendus doloribus accusantium
-              nesciunt voluptas maxime, enim cumque quis assumenda nemo est
-              saepe quisquam deleniti quia nisi distinctio perferendis
-              laudantium vitae molestiae iusto quae aliquam hic porro! Magni,
-              atque?
-            </p>
+                  <div class="ment">
+                      <label for="" >
+                          Mobile
+                          <input type="text">
+                      </label>
+                      <label for="" >
+                          Address
+                          <input type="text">
+                      </label>
+                  </div>
 
-            <p class="more_p">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
-              nostrum quia? Ullam at vitae qui quis accusamus sunt sapiente
-              tempora unde molestias explicabo sed, iusto harum! Quidem ut
-              assumenda laborum.
-            </p>
-          </div>
-        </div>
+                  <hr>
+                  <h3>Email</h3>
+                  <p>Your email address is <span>email@example.com</span></p>
+                  <button type="submit">Update</button>
+                  <hr>
+               </form>
+
+               <div class="add_user">
+                 <h3>Admin Users</h3>
+                 <p>Admin can add or remove accounts and manage organisation-level setting</p>
+                 <button>Add User</button>
+               </div>
+
+
+            </div>
+
+
+           <input type="radio" class="tabs_radio" name="settings" id="tab2">
+           <label for="tab2" class="tabs_label">Security & Login</label>
+
+           <!-- FIRST TAB CONTENTS -->
+            <div class="t_content">
+                I am here as Tab #2222
+            </div>
+
+       </div>
+       
       </div>
     </section>
 

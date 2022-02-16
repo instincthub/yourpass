@@ -1092,6 +1092,143 @@ nav .hamburger {
      object-fit: cover;
 }
 
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tabs .tabs_radio {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.tabs .tabs_radio:checked + .tabs_label {
+  border-bottom: 3px solid #d982aa;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.tabs .tabs_radio:checked + .tabs_label + .t_content {
+  display: initial;
+}
+
+.tabs .tabs_label {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 0.8);
+  margin-right: 25px;
+}
+
+.tabs .t_content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  display: none;
+}
+
+.tabs .t_content form {
+  margin-top: 40px;
+}
+
+.tabs .t_content form h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.tabs .t_content form p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.tabs .t_content form p span {
+  font-weight: 700;
+}
+
+.tabs .t_content form .ment label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.tabs .t_content form .ment label input {
+  margin-bottom: 20px;
+}
+
+.tabs .t_content form button {
+  font-weight: bold;
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+  line-height: 19px;
+  margin-top: 30px;
+  letter-spacing: 0.04em;
+  border: 2px solid #d982aa;
+  background-color: transparent;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+  color: #d982aa;
+}
+
+.tabs .t_content .add_user h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.tabs .t_content .add_user p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.tabs .t_content .add_user button {
+  height: 50px;
+  background-color: #d982aa;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 350px;
+  margin-bottom: 50px;
+  position: absolute;
+  right: 20px;
+}
+
+.tabs .t_content .add_user button::before {
+  content: "+";
+  position: relative;
+  top: 3px;
+  font-weight: 400;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
 @media (max-width: 767px) {
   nav {
     padding: 25px 20px;
@@ -1488,7 +1625,7 @@ nav .hamburger {
     width: 50%;
   }
   .detail_wrap .back-img img {
-    height: 400px;
+    height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
   }
