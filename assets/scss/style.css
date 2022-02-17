@@ -1124,7 +1124,6 @@ nav .hamburger {
   font-size: 16px;
   line-height: 22px;
   color: rgba(51, 51, 51, 0.8);
-  margin-right: 5px;
 }
 
 .tabs .t_content {
@@ -1458,6 +1457,7 @@ nav .hamburger {
   margin-right: 10px;
   position: absolute;
   left: -38px;
+  top: 5px;
 }
 
 @media (max-width: 767px) {
