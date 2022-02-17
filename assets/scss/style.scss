@@ -731,7 +731,7 @@ nav {
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.025em;
-        text-transform: capitalize;
+        // text-transform: capitalize;
         color: #333333;
       }
       .more_p {
@@ -830,7 +830,6 @@ nav {
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
-
   .tabs_radio {
     display: none;
     width: 30px;
@@ -932,7 +931,7 @@ nav {
         line-height: 22px;
         width: 100%;
         margin-top: 20px;
-        max-width: 350px;
+        max-width: 170px;
         margin-bottom: 50px;
         position: absolute;
         right: 20px;
@@ -948,6 +947,84 @@ nav {
         }
       }
     }
+    .rec {
+      margin-top: 48px;
+      h2 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
+      }
+      h5 {
+        font-weight: bold;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 16px;
+        &::before {
+          content: url("../../images/notify.svg");
+          margin-right: 15px;
+          position: relative;
+          top: 8px;
+        }
+      }
+      p {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+      }
+    }
+    .log {
+      h4 {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: capitalize;
+      }
+      .log_key {
+        margin-left: 45px;
+        h5 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          margin-top: 25px;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+        }
+        p {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.03em;
+          color: rgba(51, 51, 51, 0.7);
+        }
+        &::before {
+          content: url("../../images/password_key.svg");
+          margin-right: 15px;
+          position: absolute;
+          left: 25px;
+        }
+      }
+      button {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        text-transform: capitalize;
+        background-color: transparent;
+        color: $pk;
+        margin-top: 24px;
+        width: 100%;
+      }
+      hr {
+        margin-top: 50px;
+      }
+    }
+  }
+  hr {
+    border: 1px solid rgba(51, 51, 51, 0.6);
   }
 }
 
@@ -1358,6 +1435,13 @@ nav {
     height: 250px;
     object-fit: cover;
   }
+  .ment {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabs .t_content form .ment label {
+    width: 47%;
+  }
 }
 
 @media (min-width: 660px) {
@@ -1371,6 +1455,15 @@ nav {
   }
 }
 
+@media (min-width: 560px) {
+  .uu_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabs .t_content form button {
+    max-width: 170px;
+  }
+}
 @media (max-width: 560px) {
   .ghost_list {
     display: none;

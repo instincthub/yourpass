@@ -63,7 +63,6 @@ p {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.025em;
-  text-transform: capitalize;
   color: #333333;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -1001,7 +1000,6 @@ nav .hamburger {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.025em;
-  text-transform: capitalize;
   color: #333333;
 }
 
@@ -1212,7 +1210,7 @@ nav .hamburger {
   line-height: 22px;
   width: 100%;
   margin-top: 20px;
-  max-width: 350px;
+  max-width: 170px;
   margin-bottom: 50px;
   position: absolute;
   right: 20px;
@@ -1227,6 +1225,96 @@ nav .hamburger {
   font-size: 25px;
   margin-top: 10px;
   margin-right: 15px;
+}
+
+.tabs .t_content .rec {
+  margin-top: 48px;
+}
+
+.tabs .t_content .rec h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.tabs .t_content .rec h5 {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+.tabs .t_content .rec h5::before {
+  content: url("../../images/notify.svg");
+  margin-right: 15px;
+  position: relative;
+  top: 8px;
+}
+
+.tabs .t_content .rec p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.tabs .t_content .log h4 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.tabs .t_content .log .log_key {
+  margin-left: 45px;
+}
+
+.tabs .t_content .log .log_key h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.tabs .t_content .log .log_key p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.tabs .t_content .log .log_key::before {
+  content: url("../../images/password_key.svg");
+  margin-right: 15px;
+  position: absolute;
+  left: 25px;
+}
+
+.tabs .t_content .log button {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #d982aa;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.tabs .t_content .log hr {
+  margin-top: 50px;
+}
+
+.tabs hr {
+  border: 1px solid rgba(51, 51, 51, 0.6);
 }
 
 @media (max-width: 767px) {
@@ -1646,6 +1734,17 @@ nav .hamburger {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .ment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tabs .t_content form .ment label {
+    width: 47%;
+  }
 }
 
 @media (min-width: 660px) {
@@ -1661,6 +1760,20 @@ nav .hamburger {
   }
   .e_cards .main_card {
     width: 48.5%;
+  }
+}
+
+@media (min-width: 560px) {
+  .uu_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tabs .t_content form button {
+    max-width: 170px;
   }
 }
 
