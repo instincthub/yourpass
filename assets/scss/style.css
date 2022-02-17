@@ -1124,7 +1124,7 @@ nav .hamburger {
   font-size: 16px;
   line-height: 22px;
   color: rgba(51, 51, 51, 0.8);
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 .tabs .t_content {
@@ -1335,6 +1335,11 @@ nav .hamburger {
   margin-bottom: 24px;
 }
 
+.tabs .t_content .recent .track .device {
+  margin-left: 40px;
+  position: relative;
+}
+
 .tabs .t_content .recent .track .device h4 {
   font-weight: bold;
   font-size: 14px;
@@ -1373,7 +1378,7 @@ nav .hamburger {
 }
 
 .tabs .t_content .factors .cng {
-  width: 70%;
+  width: 80%;
 }
 
 .tabs .t_content .factors .cng h2 {
@@ -1384,7 +1389,7 @@ nav .hamburger {
 
 .tabs .t_content .factors .cng p {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.04em;
   color: rgba(51, 51, 51, 0.7);
@@ -1411,6 +1416,7 @@ nav .hamburger {
 }
 
 .tabs .t_content .factors .swit label {
+  margin-top: 10px;
   cursor: pointer;
   text-indent: -9999px;
   width: 50px;
@@ -1436,6 +1442,22 @@ nav .hamburger {
 
 .tabs hr {
   border: 1px solid rgba(51, 51, 51, 0.6);
+}
+
+.desktop::before {
+  content: url("../../images/Deskstop.svg");
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  left: -38px;
+}
+
+.phone::before {
+  content: url("../../images/phone.svg");
+  margin-right: 10px;
+  position: absolute;
+  left: -38px;
 }
 
 @media (max-width: 767px) {
