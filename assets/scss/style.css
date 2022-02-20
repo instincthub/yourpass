@@ -1439,6 +1439,75 @@ nav .hamburger {
   transition: 0.3s;
 }
 
+.tabs .t_content .c_verify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tabs .t_content .c_verify .v_radio {
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+
+.tabs .t_content .c_verify .v_radio:checked + .v_label {
+  background-color: #d982aa;
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.tabs .t_content .c_verify .v_radio:checked + .v_label h4,
+.tabs .t_content .c_verify .v_radio:checked + .v_label p {
+  color: #fff;
+}
+
+.tabs .t_content .c_verify .v_radio:checked + .v_label + .v_content {
+  display: initial;
+}
+
+.tabs .t_content .c_verify .v_label {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fff;
+  line-height: 22px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: rgba(51, 51, 51, 0.8);
+  border-radius: 5px;
+}
+
+.tabs .t_content .c_verify .v_label h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.tabs .t_content .c_verify .v_label p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: rgba(51, 51, 51, 0.9);
+}
+
+.tabs .t_content .c_verify .v_content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  display: none;
+}
+
 .tabs hr {
   border: 1px solid rgba(51, 51, 51, 0.6);
 }

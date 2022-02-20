@@ -1119,6 +1119,65 @@ nav {
         }
       }
     }
+    .c_verify {
+      display: flex;
+      max-width: 100%;
+      flex-wrap: wrap;
+      .v_radio {
+        display: none;
+        // position: absolute;
+        width: 15px;
+        height: 15px;
+        &:checked + .v_label {
+          background-color: $pk;
+          font-weight: bold;
+          width: 100%;
+          font-size: 16px;
+          line-height: 22px;
+          h4,
+          p {
+            color: $white;
+          }
+
+          + .v_content {
+            display: initial;
+          }
+        }
+      }
+
+      .v_label {
+        padding: 10px 16px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: $white;
+        line-height: 22px;
+        width: 100%;
+        margin-bottom: 10px;
+        color: rgba(51, 51, 51, 0.8);
+        // margin-right: 5px;
+        border-radius: 5px;
+        h4 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.04em;
+          text-transform: capitalize;
+        }
+        p {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.04em;
+          color: rgba(51, 51, 51, 0.9);
+        }
+      }
+      .v_content {
+        order: 1;
+        width: 100%;
+        display: none;
+      }
+    }
   }
   hr {
     border: 1px solid rgba(51, 51, 51, 0.6);
