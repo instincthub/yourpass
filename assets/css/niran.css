@@ -223,7 +223,6 @@ h1{
   width: 17px;
   border-radius: 5px;
   margin-top: -8px;
-  margin-left: -5px;
   background-color: #d982aa;
 }
 
@@ -273,7 +272,7 @@ h1{
   margin-top: -5px;
 }
 
-hr{
+.hr1{
   background: #bc658d;
   opacity: 30%;
   margin-top: 1.2em;
@@ -335,10 +334,19 @@ hr{
   margin-left: -23px;
 }
 
-@media screen and (max-width: 768px){
-  /* ul{
+@media screen and (max-width: 320px){
+  ul{
     display: none;
-  } */
+  }
+  .hr2{
+    display: none;
+  }
+  .firstb, .lastb{
+    display: none;
+  }
+  .x{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -414,10 +422,23 @@ ul li{
   margin-top: -1em;
 }
 
-.hr1{
-  display: none;
+ /* Icons and numbers  */
+ .firstb, .lastb{
+   width: 40px;
+   height: 25px;
+   background: white;
+   border-radius: 3px;
+   box-shadow: 0px 3px 5px rgba(0 0 0 /0.05);
 }
 
+ .firstb p{
+   text-align: center;
+}
+
+ .lastb p{
+   text-align: center;
+}
+/* Icons and numbers end */
 .last{
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
@@ -432,4 +453,13 @@ ul li{
   margin-top: 15px;
 }
 
+.hr1{
+  display: none;
+}
+
+.hr2{
+  background: #bc658d;
+  opacity: 30%;
+  margin-top: 1.2em;
+}
 }
