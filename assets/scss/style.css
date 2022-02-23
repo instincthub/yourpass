@@ -5,6 +5,7 @@
           box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  outline: 0;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -1236,9 +1237,10 @@ nav .hamburger {
 
 .tabs .t_content .tabulate {
   max-width: 1022px;
-  overflow: scroll;
   margin-top: 100px;
   margin-bottom: 50px;
+  border: 2px solid #eeeeee;
+  border-radius: 5px;
 }
 
 .tabs .t_content .tabulate .wrap_head {
@@ -1675,6 +1677,10 @@ hr {
   left: -38px;
 }
 
+.grim {
+  background-color: #d8d8d8;
+}
+
 .phone::before {
   content: url("../../images/phone.svg");
   margin-right: 10px;
@@ -1688,16 +1694,16 @@ hr {
     display: none;
   }
   .tabs .t_content .tabulate .wrap_head .hd .tt_head {
-    width: 24%;
+    width: 50%;
   }
   .tabs .t_content .tabulate .wrap_head .hd .sta {
     width: 40%;
   }
   .tabs .t_content .tabulate .wrap_list .gd .dls {
-    width: 44%;
+    width: 38%;
   }
   .tabs .t_content .tabulate .wrap_list .gd .tt_list {
-    width: 50%;
+    width: 80%;
   }
 }
 
