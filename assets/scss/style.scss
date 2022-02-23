@@ -1325,6 +1325,9 @@ hr {
   .blind {
     display: none;
   }
+  .tabs .t_content .tabulate .hd {
+    width: 100%;
+  }
   .tabs .t_content .tabulate .wrap_head .hd .tt_head {
     width: 50%;
   }
@@ -1332,7 +1335,7 @@ hr {
     width: 40%;
   }
   .tabs .t_content .tabulate .wrap_list .gd .dls {
-    width: 38%;
+    width: 30%;
   }
   .tabs .t_content .tabulate .wrap_list .gd .tt_list {
     width: 80%;
