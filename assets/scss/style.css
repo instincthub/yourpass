@@ -1635,7 +1635,7 @@ nav .hamburger {
   background-color: #fff;
   line-height: 22px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: rgba(51, 51, 51, 0.8);
   border-radius: 5px;
 }
@@ -1664,8 +1664,80 @@ nav .hamburger {
   display: none;
 }
 
+.tabs .c_verify .v_content form .w_bk {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.tabs .c_verify .v_content form .w_bk p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: rgba(51, 51, 51, 0.9);
+  margin-bottom: 20px;
+}
+
+.tabs .c_verify .v_content form .w_bk label {
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.tabs .c_verify .v_content form .w_bk label input {
+  background-color: #f4f4f4;
+}
+
+.tabs .c_verify .v_content form .w_bk .resend {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.tabs .c_verify .v_content form .w_bk .resend img {
+  width: 16px;
+  margin-right: 5px;
+  height: 16px;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tabs .c_verify .v_content form button {
+  border: 0;
+  background-color: #d982aa;
+  color: #fff;
+  max-width: 280px;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
 hr {
   border: 1px solid rgba(51, 51, 51, 0.6);
+}
+
+.tabs .c_verify .v_content form .w_bk .resend img.trans {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .desktop::before {
