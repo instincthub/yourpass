@@ -861,6 +861,7 @@ nav {
     order: 1;
     width: 100%;
     display: none;
+    overflow: hidden;
     form {
       margin-top: 40px;
       h3 {
@@ -1060,6 +1061,14 @@ nav {
         }
       }
     }
+
+    .syntax {
+      background-color: $white;
+      border-radius: 5px;
+      max-width: 800px;
+      .tracks {
+      }
+    }
   }
   .rec {
     margin-top: 48px;
@@ -1240,7 +1249,6 @@ nav {
     flex-wrap: wrap;
     .v_radio {
       display: none;
-      // position: absolute;
       width: 15px;
       height: 15px;
       &:checked + .v_label {
@@ -1295,7 +1303,7 @@ nav {
         .w_bk {
           background-color: $white;
           padding: 20px;
-          margin-bottom: 50px;
+
           border-radius: 5px;
           p {
             font-style: normal;
@@ -1351,7 +1359,66 @@ nav {
           font-weight: 700;
           line-height: 22px;
           letter-spacing: 0em;
+          margin-bottom: 50px;
         }
+      }
+    }
+  }
+  .from_to {
+    position: absolute;
+    right: 20px;
+    top: 215px;
+    max-width: 414px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 5px;
+    padding: 20px;
+    h2 {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.04em;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .date_data {
+      display: flex;
+      justify-content: space-between;
+      font-family: Nunito;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-align: left;
+
+      span {
+        font-family: Nunito;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+      }
+      img {
+        height: 25px;
+        width: 25px;
+        object-fit: cover;
+      }
+      input {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        // margin-left: 10px;
+        font-family: Nunito;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        text-align: left;
       }
     }
   }

@@ -5,7 +5,7 @@
           box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  outline: 0;
+  -webkit-tap-highlight-color: transparent;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -1137,6 +1137,7 @@ nav .hamburger {
           order: 1;
   width: 100%;
   display: none;
+  overflow: hidden;
 }
 
 .tabs .t_content form {
@@ -1380,6 +1381,12 @@ nav .hamburger {
   width: 25px;
   height: 25px;
   margin-top: 5px;
+}
+
+.tabs .t_content .syntax {
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 800px;
 }
 
 .tabs .rec {
@@ -1667,7 +1674,6 @@ nav .hamburger {
 .tabs .c_verify .v_content form .w_bk {
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 50px;
   border-radius: 5px;
 }
 
@@ -1729,6 +1735,74 @@ nav .hamburger {
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0em;
+  margin-bottom: 50px;
+}
+
+.tabs .from_to {
+  position: absolute;
+  right: 20px;
+  top: 215px;
+  max-width: 414px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.tabs .from_to h2 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.tabs .from_to .date_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.tabs .from_to .date_data span {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.tabs .from_to .date_data img {
+  height: 25px;
+  width: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tabs .from_to .date_data input {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 hr {
