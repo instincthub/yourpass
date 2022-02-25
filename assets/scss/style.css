@@ -1469,6 +1469,54 @@ nav .hamburger {
   margin-top: 7px;
 }
 
+.tabs .t_content .t_result {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 25px 50px 25px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.tabs .t_content .t_result p {
+  margin-bottom: 10px;
+}
+
+.tabs .t_content .t_result .age {
+  margin-top: 50px;
+}
+
+.tabs .t_content .t_result .age .count_wrap .counts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs .t_content .t_result .age .count_wrap .counts h5 {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.tabs .t_content .t_result .age .count_wrap .counts .l_wrap {
+  width: 247px;
+  height: 8px;
+  background: #f4f4f4;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.tabs .t_content .t_result .age .count_wrap .counts .l_wrap .wrap {
+  background-color: #d982aa;
+  border-radius: 4px;
+  height: 8px;
+}
+
 .tabs .rec {
   margin-top: 48px;
 }
