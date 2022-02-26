@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  -webkit-tap-highlight-color: transparent;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -29,7 +30,7 @@ h4 {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-  text-transform: capitalize;
+  // text-transform: capitalize;
   color: $black;
 }
 h5 {
@@ -91,11 +92,13 @@ input {
   padding: 15px;
   border-radius: 5px;
   flex: none;
-
   border: 0;
   outline: 0;
-
   margin: 8px 0px;
+}
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
 }
 button {
   height: 45px;
