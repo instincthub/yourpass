@@ -1996,8 +1996,7 @@ hr {
   border-bottom: 1px solid #dddd;
 }
 
-.content_table th,
-.content_table td {
+.content_table th {
   padding: 12px 15px;
   font-family: Nunito;
   font-size: 14px;
@@ -2008,7 +2007,17 @@ hr {
   text-align: left;
 }
 
-.content_table th p,
+.content_table td {
+  padding: 0 15px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
 .content_table td p {
   text-align: center;
   font-size: 14px;
@@ -2018,7 +2027,6 @@ hr {
   letter-spacing: 0.02em;
 }
 
-.content_table th p span,
 .content_table td p span {
   text-align: center;
 }

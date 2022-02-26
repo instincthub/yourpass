@@ -1600,9 +1600,18 @@ hr {
       // }
     }
   }
-  th,
-  td {
+  th {
     padding: 12px 15px;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  td {
+    padding: 0 15px;
     font-family: Nunito;
     font-size: 14px;
     font-style: normal;
