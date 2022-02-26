@@ -1504,7 +1504,7 @@ nav .hamburger {
 }
 
 .tabs .t_content .t_result .age .count_wrap .counts .l_wrap {
-  width: 247px;
+  width: 240px;
   height: 8px;
   background: #f4f4f4;
   border-radius: 4px;
@@ -1962,6 +1962,73 @@ hr {
   top: 5px;
 }
 
+.content_table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  width: 100%;
+}
+
+.content_table thead tr {
+  background: #ffffff;
+  text-align: left;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
+}
+
+.content_table thead tr select {
+  background-color: transparent;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  border: none;
+}
+
+.content_table tbody tr {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #dddd;
+}
+
+.content_table th,
+.content_table td {
+  padding: 12px 15px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.content_table th p,
+.content_table td p {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+.content_table th p span,
+.content_table td p span {
+  text-align: center;
+}
+
+@media (min-width: 820px) {
+  .tabs .t_content .t_result {
+    width: 40%;
+  }
+}
+
 @media (max-width: 820px) {
   .blind {
     display: none;
@@ -1981,6 +2048,16 @@ hr {
   .tabs .t_content .tabulate .wrap_list .gd .tt_list {
     width: 80%;
   }
+  .mute {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .content_table th,
+  .content_table td {
+    min-width: 150px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1996,6 +2073,10 @@ hr {
   }
   .avatar_bell {
     display: none;
+  }
+  .content_table th,
+  .content_table td {
+    min-width: 230px;
   }
   nav ul {
     display: -webkit-box;
