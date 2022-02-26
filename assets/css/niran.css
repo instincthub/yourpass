@@ -100,7 +100,7 @@ h1 {
 
 .rec {
   font-weight: bold;
-  margin-left: 1em;
+  margin-left: 5%;
   margin-top: 2em;
 }
 
@@ -188,7 +188,7 @@ h1 {
 
 .upcoming {
   font-weight: bold;
-  margin-left: 1em;
+  margin-left: 5%;
   margin-top: 2em;
 }
 
@@ -413,6 +413,13 @@ h1 {
 
 @media screen and (min-width: 768px){
 /* Header */
+ .rec{
+  margin-left: 2%;
+ }
+
+.upcoming{
+  margin-left: 2%;
+}
 
 .ham{
   display: none;
