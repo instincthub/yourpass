@@ -32,10 +32,9 @@ h1{
   margin: 0px 0px 10px -10px;
 }
 
-.why{
+.ham{
   height: 30px;
   width: 30px;
-  background-color: green;
   margin: 0px -10px 10px 0px;
 }
 /* Nav ends */
@@ -45,8 +44,8 @@ h1{
   height: 360px;
   width: 100%;
   color: white;
-  background: black;
   background-image: url(images/unsplash_uf2nnANWa8Q.png);
+  background: #727272;
   position: relative;
 }
 
@@ -73,16 +72,18 @@ h1{
   width: 100px;
   background-color: white;
   color: black;
-  bottom: 30px;
-  right: 20px;
+  margin-top: 310px;
+  margin-left: 50px;
   border-radius: 3px;
+  border: none;
 }
 
 .drop_down{
   position: absolute;
   height: 4px;
   width: 6px;
-  margin: 15px 0px 0px 15px;
+  margin-top: 325px;
+  margin-left: 120px;
 }
 
 .lagos p{
@@ -207,6 +208,7 @@ h1{
 }
 /* Main2 ends */
 
+
 .numbers{
   margin-top: -6px;
   display: flex;
@@ -223,6 +225,7 @@ h1{
   width: 17px;
   border-radius: 5px;
   margin-top: -8px;
+  margin-left: -5px;
   background-color: #d982aa;
 }
 
@@ -259,13 +262,14 @@ h1{
   font-size: 13px;
 }
 
+.last h3{
+  font-size: 15px;
+}
+
 .last2{
   margin-top: 2em;
 }
 
-.last h3{
-  font-size: 15px;
-}
 
 .last2 p{
   font-size: 11px;
@@ -334,16 +338,74 @@ h1{
   margin-left: -23px;
 }
 
-@media screen and (max-width: 320px){
-  ul{
-    display: none;
+@media screen and (max-width: 767.9px) {
+  .menu{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
   }
+
+  ul{
+    list-style-type: none;
+    margin-top: 3em;
+  }
+
+  li{
+    padding: 3em;
+    text-align: center;
+  }
+
+  li:hover{
+    background: #dadada;
+  }
+
+  .close{
+    width: 1.8em;
+    height: 1.8em;
+    float: right;
+    right: 0;
+    margin-top: 1em;
+    margin-right: .8em;
+  }
+
+  .open-nav{
+    transform: translateX(0%);
+  }
+
+  .a{
+    padding: 5px 0px;
+    height: 35px;
+    width: 70px;
+    border: 2px solid #808080;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .b{
+    padding: 5px 0px;
+    height: 35px;
+    width: 70px;
+    border: none;
+    background-color: #d982aa;
+    border-radius: 5px;
+    color: white;
+  }
+
   .hr2{
     display: none;
   }
+
   .firstb, .lastb{
     display: none;
   }
+
   .x{
     display: none;
   }
@@ -351,9 +413,14 @@ h1{
 
 @media screen and (min-width: 768px){
 /* Header */
-.why{
-    display: none;
-  }
+
+.ham{
+  display: none;
+}
+
+.close{
+  display: none;
+}
 
 nav{
   display: flex;
@@ -406,6 +473,26 @@ ul li{
   margin-left: 14%;
   margin-right: 14%;
 }
+
+.lagos{
+  position: absolute;
+  height: 35px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  margin-top: 300px;
+  margin-left: 250px;
+  border-radius: 3px;
+  border: none;
+}
+
+.drop_down{
+  position: absolute;
+  height: 4px;
+  width: 6px;
+  margin-top: 316px;
+  margin-left: 320px;
+}
 /* First ends */
 
 .main1{
@@ -433,10 +520,12 @@ ul li{
 
  .firstb p{
    text-align: center;
+   margin-top: 7px;
 }
 
  .lastb p{
    text-align: center;
+   margin-top: 7px;
 }
 /* Icons and numbers end */
 .last{
@@ -450,7 +539,12 @@ ul li{
 
 .last2{
   margin-left: -100px;
-  margin-top: 15px;
+  margin-top: 10px;
+}
+
+.last2 p{
+  font-size: 11px;
+  margin-top: -5px;
 }
 
 .hr1{
@@ -462,4 +556,5 @@ ul li{
   opacity: 30%;
   margin-top: 1.2em;
 }
+
 }
