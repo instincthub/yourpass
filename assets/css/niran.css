@@ -32,10 +32,9 @@ h1 {
   margin: 0px 0px 10px -10px;
 }
 
-.why {
+.ham{
   height: 30px;
   width: 30px;
-  background-color: green;
   margin: 0px -10px 10px 0px;
 }
 /* Nav ends */
@@ -45,9 +44,8 @@ h1 {
   height: 360px;
   width: 100%;
   color: white;
-  background: black;
-  background: url(../../images/unsplash_uf2nnANWa8Q.png) no-repeat center
-    center/cover;
+  /* background-image: url(images/unsplash_uf2nnANWa8Q.png); */
+  background: #727272;
   position: relative;
 }
 
@@ -74,16 +72,18 @@ h1 {
   width: 100px;
   background-color: white;
   color: black;
-  bottom: 30px;
-  right: 20px;
+  margin-top: 310px;
+  margin-left: 50px;
   border-radius: 3px;
+  border: none;
 }
 
 .drop_down {
   position: absolute;
   height: 4px;
   width: 6px;
-  margin: 15px 0px 0px 15px;
+  margin-top: 325px;
+  margin-left: 120px;
 }
 
 .lagos p {
@@ -100,7 +100,7 @@ h1 {
 
 .rec {
   font-weight: bold;
-  margin-left: 1em;
+  margin-left: 5%;
   margin-top: 2em;
 }
 
@@ -188,7 +188,7 @@ h1 {
 
 .upcoming {
   font-weight: bold;
-  margin-left: 1em;
+  margin-left: 5%;
   margin-top: 2em;
 }
 
@@ -208,7 +208,8 @@ h1 {
 }
 /* Main2 ends */
 
-.numbers {
+
+.numbers{
   margin-top: -6px;
   display: flex;
   justify-content: space-evenly;
@@ -224,6 +225,7 @@ h1 {
   width: 17px;
   border-radius: 5px;
   margin-top: -8px;
+  margin-left: -5px;
   background-color: #d982aa;
 }
 
@@ -260,13 +262,14 @@ h1 {
   font-size: 13px;
 }
 
-.last2 {
+.last h3{
+  font-size: 15px;
+}
+
+.last2{
   margin-top: 2em;
 }
 
-.last h3 {
-  font-size: 15px;
-}
 
 .last2 p {
   font-size: 11px;
@@ -335,27 +338,96 @@ h1 {
   margin-left: -23px;
 }
 
-@media screen and (max-width: 320px) {
-  ul {
+@media screen and (max-width: 767.9px) {
+  .menu{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+  }
+
+  ul{
+    list-style-type: none;
+    margin-top: 3em;
+  }
+
+  li{
+    padding: 3em;
+    text-align: center;
+  }
+
+  li:hover{
+    background: #dadada;
+  }
+
+  .close{
+    width: 1.8em;
+    height: 1.8em;
+    float: right;
+    right: 0;
+    margin-top: 1em;
+    margin-right: .8em;
+  }
+
+  .open-nav{
+    transform: translateX(0%);
+  }
+
+  .a{
+    padding: 5px 0px;
+    height: 35px;
+    width: 70px;
+    border: 2px solid #808080;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .b{
+    padding: 5px 0px;
+    height: 35px;
+    width: 70px;
+    border: none;
+    background-color: #d982aa;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .hr2{
     display: none;
   }
-  .hr2 {
+
+  .firstb, .lastb{
     display: none;
   }
-  .firstb,
-  .lastb {
-    display: none;
-  }
-  .x {
+
+  .x{
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  /* Header */
-  .why {
-    display: none;
-  }
+@media screen and (min-width: 768px){
+/* Header */
+ .rec{
+  margin-left: 2%;
+ }
+
+.upcoming{
+  margin-left: 2%;
+}
+
+.ham{
+  display: none;
+}
+
+.close{
+  display: none;
+}
 
   nav {
     display: flex;
@@ -402,13 +474,33 @@ h1 {
     margin-top: 5em;
   }
 
-  .ourevents .look {
-    margin-top: 13em;
-    width: 72%;
-    margin-left: 14%;
-    margin-right: 14%;
-  }
-  /* First ends */
+.ourevents .look{
+  margin-top: 13em;
+  width: 72%;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+
+.lagos{
+  position: absolute;
+  height: 35px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  margin-top: 300px;
+  margin-left: 250px;
+  border-radius: 3px;
+  border: none;
+}
+
+.drop_down{
+  position: absolute;
+  height: 4px;
+  width: 6px;
+  margin-top: 316px;
+  margin-left: 320px;
+}
+/* First ends */
 
   .main1 {
     display: grid;
@@ -434,35 +526,43 @@ h1 {
     box-shadow: 0px 3px 5px rgba(0 0 0 /0.05);
   }
 
-  .firstb p {
-    text-align: center;
-  }
+ .firstb p{
+   text-align: center;
+   margin-top: 7px;
+}
 
-  .lastb p {
-    text-align: center;
-  }
-  /* Icons and numbers end */
-  .last {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-  }
+ .lastb p{
+   text-align: center;
+   margin-top: 7px;
+}
+/* Icons and numbers end */
+.last{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
 
   .last1 p {
     width: 60%;
   }
 
-  .last2 {
-    margin-left: -100px;
-    margin-top: 15px;
-  }
+.last2{
+  margin-left: -100px;
+  margin-top: 10px;
+}
+
+.last2 p{
+  font-size: 11px;
+  margin-top: -5px;
+}
 
   .hr1 {
     display: none;
   }
 
-  .hr2 {
-    background: #bc658d;
-    opacity: 30%;
-    margin-top: 1.2em;
-  }
+.hr2{
+  background: #bc658d;
+  opacity: 30%;
+  margin-top: 1.2em;
+}
+
 }
