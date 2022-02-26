@@ -10,22 +10,26 @@
 
   <body>
     <header>
+
       <nav>
+
         <div class="yourpass">
-
-          <h1>Your<span>Pass</span></h1>
-          <div class="why"></div>
-
+        <h1>Your<span>Pass</span></h1>
+        <img src="images/hamburger-menu.svg" alt="ham" class="ham">
         </div>
 
+        <div class="menu">
+          <img src="icons/close.svg" alt="close" class="close">
           <ul>
             <li>Events</li>
             <li>About Us</li>
             <li><button class="a">Sign Up</button></li>
             <li><button class="b">Login</button></li>
           </ul>
+        </div>
 
       </nav>
+
     </header>
 
     <section class="first">
@@ -37,14 +41,12 @@
         <center>
 
 
-<!-- Lagos -->
-        <div class="lagos">
-          <!-- <button type="button" name="button"></button> -->
-          <p class="lala">Lagos</p>
+    <!-- Lagos -->
+      <div>
+          <button type="button" name="button" class="lagos">Lagos</button>
           <img src="icons/Dropdown Vector.png" alt="Drop-down icon" class="drop_down">
-        </div>
-<!-- Lagos ends -->
      </div>
+     <!-- Lagos ends -->
 
     </section>
 
@@ -573,5 +575,19 @@
     </center>
 </section>
 
+
+   <script type="text/javascript">
+        const ham = document.querySelector('.ham')
+        const close = document.querySelector('.close')
+        const menu = document.querySelector('.menu')
+
+        ham.addEventListener('click', () => {
+              menu.classList.add('open-nav')
+            })
+
+        close.addEventListener('click', () => {
+              menu.classList.remove('open-nav')
+            })
+    </script>
   </body>
 </html>
