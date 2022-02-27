@@ -1582,7 +1582,7 @@ nav .hamburger {
   content: url("../../images/password_key.svg");
   margin-right: 15px;
   position: absolute;
-  left: 25px;
+  left: 0px;
 }
 
 .tabs .log button {
@@ -1683,10 +1683,6 @@ nav .hamburger {
   line-height: 22px;
   letter-spacing: 0.04em;
   color: rgba(51, 51, 51, 0.7);
-}
-
-.tabs .factors .swit {
-  width: 13%;
 }
 
 .tabs .factors .swit input {
@@ -2696,6 +2692,80 @@ hr {
   .e_cards .main_card {
     width: 48.5%;
   }
+}
+
+.log {
+  position: relative;
+}
+
+.log .change_password {
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+  padding: 20px 30px;
+  top: 0;
+  z-index: 2;
+}
+
+.log .change_password .sub_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.log .change_password .sub_ span {
+  width: 165px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.log .change_password .sub_ button {
+  margin: 0;
+  width: 165px;
+  height: 50px;
+  background-color: #d982aa;
+  color: #fff;
+  cursor: pointer;
+}
+
+.log .change_password label {
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.log .change_password label input {
+  background-color: #f4f4f4;
+  margin-bottom: 30px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.change_password.active {
+  display: block;
 }
 
 @media (min-width: 560px) {

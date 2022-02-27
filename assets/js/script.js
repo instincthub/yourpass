@@ -5,26 +5,23 @@ const rotate = document.querySelectorAll(".resend");
 const arrow = document.querySelectorAll("#imgg");
 let removeDevice = document.querySelectorAll("#remove_device");
 let deviceTracks = document.querySelector(".track");
-// for (let i = 0; i < rotate.length; i++) {
-//   const round = rotate[i];
-//   round.addEventListener("click", () => {
-//     arrow.classList.toggle("trans");
-//   });
-// }
+let changePassword = document.querySelector(".changePassword");
+let claimPassword = document.querySelector(".change_password");
+let removePasswordForm = document.querySelector("#pass_form");
 
-removeDevice.forEach((rdx) => {
-  rdx.addEventListener("click", () => {
-    // deviceTracks.forEach((dtc) => {
+// Intialize this block to remove devices at "Where you are logged in"
+for (let e = 0; e < removeDevice.length; e++) {
+  const forDelete = removeDevice[e];
+  forDelete.addEventListener("click", () => {
     deviceTracks.style.visibility = "hidden";
-    // });
   });
-});
+}
 
-rotate.forEach(function (rotat) {
-  rotat.addEventListener("click", () => {
-    arrow.forEach((arr) => {
-      arr.classList.toggle("trans");
-    });
+// Change Users Password
+changePassword.addEventListener("click", () => {
+  claimPassword.classList.add("active");
+  removePasswordForm.addEventListener("click", () => {
+    claimPassword.classList.remove("active");
   });
 });
 
