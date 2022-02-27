@@ -43,7 +43,7 @@
             <h3>Overview</h3>
           </a>
 
-          <a href="stats.html" class="current-list">
+          <a href="stats.html">
             <svg
               width="27"
               height="27"
@@ -83,7 +83,7 @@
             <h3>Events</h3>
           </a>
 
-          <a href="attendee.html" class="">
+          <a href="attendee.html" class="current-list">
             <svg
               width="27"
               height="27"
@@ -141,10 +141,10 @@
         <div class="nav2">
           <input
             type="text"
-            placeholder="Search event"
+            placeholder="Search Attendee..."
             class="search_field"
-            id="eventinput"
-            onkeyup="searchEvents()"
+            id="tableEvents"
+            onkeyup="tableAttendee()"
           />
           <div class="avatar_bell">
             <img src="images/bell.svg" alt="notification on arrival" />
@@ -159,8 +159,24 @@
       <!-- ================
         MANAGE ALL ATTENDEES
         =================== -->
+      <div class="details_table container detail_wrap">
+        <h2>Chevron Pvt Ltd.</h2>
+        <!-- =========
+            CALENDAR
+        ======== -->
+        <div class="calendar">
+          <h2>Date</h2>
+          <div class="date_data">
+            <span>from</span>
+            <input type="date" />
+            <span>to</span>
+            <input type="date" />
 
-      <div class="container detail_wrap mute">
+            <img src="images/calendar.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container detail_wrap mute" id="mt">
         <table class="content_table">
           <thead>
             <tr>
@@ -178,7 +194,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="track_data">
               <td>1</td>
               <td>Brooklyn Simmons</td>
               <td>msodq2018@gmail.com</td>
@@ -196,22 +212,22 @@
                   </div>
                   <div class="attendee">
                     <p>
-                      All Events <br />
-                      7
+                      Attended <br />
+                      339
                     </p>
                   </div>
                   <div class="attendee">
                     <p>
-                      All Events <br />
-                      7
+                      Absent <br />
+                      67
                     </p>
                   </div>
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="track_data">
               <td>2</td>
-              <td>Brooklyn Simmons</td>
+              <td>Eze</td>
               <td>msodq2018@gmail.com</td>
               <td>(234) 80 23 54 2997</td>
               <td>
@@ -240,7 +256,7 @@
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="track_data">
               <td>3</td>
               <td>Brooklyn Simmons</td>
               <td>msodq2018@gmail.com</td>
@@ -271,8 +287,184 @@
                 </div>
               </td>
             </tr>
+            <tr class="track_data">
+              <td>4</td>
+              <td>Braun Stroman</td>
+              <td>oluyinka2018@gmail.com</td>
+              <td>(234) 80 23 54 2997</td>
+              <td>
+                <div
+                  class="craxy"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      <span>7</span>
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="track_data">
+              <td>5</td>
+              <td>Yetunde Omiyinka</td>
+              <td>yetty@gmail.com</td>
+              <td>(234) 80 23 54 2997</td>
+              <td>
+                <div
+                  class="craxy"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      <span>7</span>
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="track_data">
+              <td>6</td>
+              <td>Liverpool Jones</td>
+              <td>jones@gmail.com</td>
+              <td>(234) 80 23 54 2997</td>
+              <td>
+                <div
+                  class="craxy"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      <span>7</span>
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="track_data">
+              <td>7</td>
+              <td>Onanuga Basit</td>
+              <td>baset@gmail.com</td>
+              <td>(234) 80 23 54 2997</td>
+              <td>
+                <div
+                  class="craxy"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      <span>7</span>
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="track_data">
+              <td>8</td>
+              <td>Brown Bank</td>
+              <td>msodq2018@gmail.com</td>
+              <td>(234) 80 23 54 2997</td>
+              <td>
+                <div
+                  class="craxy"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      <span>7</span>
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                  <div class="attendee">
+                    <p>
+                      All Events <br />
+                      7
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
+      </div>
+      <div class="pagination_case">
+        <ul class="f_pagination">
+          <div class="f_arrows" style="flex-direction: row-reverse">
+            <p>First</p>
+            <div class="cage">
+              <img src="images/chevron_left.svg" />
+            </div>
+          </div>
+
+          <li>1</li>
+          <li class="active_page">2</li>
+          <li>3</li>
+
+          <div class="f_arrows">
+            <div class="cage">
+              <img src="images/chevron_right.svg" />
+            </div>
+            <p>Last</p>
+          </div>
+        </ul>
       </div>
     </section>
 

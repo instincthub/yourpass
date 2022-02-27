@@ -1954,6 +1954,78 @@ hr {
   background-color: #d8d8d8;
 }
 
+.details_table {
+  margin-top: 50px;
+}
+
+.details_table h2 {
+  margin-bottom: 15px;
+}
+
+.calendar {
+  max-width: 414px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.calendar h2 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.calendar .date_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.calendar .date_data span {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.calendar .date_data img {
+  height: 25px;
+  width: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.calendar .date_data input {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
 .phone::before {
   content: url("../../images/phone.svg");
   margin-right: 10px;
@@ -2031,6 +2103,86 @@ hr {
   text-align: center;
 }
 
+.active_page {
+  border-bottom: 4px solid #d982aa;
+  width: 30px;
+  font-weight: 800;
+}
+
+.pagination_case {
+  margin: 50px auto;
+}
+
+.pagination_case .f_pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.pagination_case .f_pagination li {
+  margin-top: 10px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.018em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pagination_case .f_pagination .f_arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.pagination_case .f_pagination .f_arrows p {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 17px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0;
+  font-weight: 600;
+  line-height: 19px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 0.018em;
+  text-align: center;
+}
+
+.pagination_case .f_pagination .f_arrows .cage {
+  cursor: pointer;
+  background-color: #d982aa;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.pagination_case .f_pagination .f_arrows .cage img {
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: 820px) {
   .tabs .t_content .t_result {
     width: 40%;
@@ -2057,9 +2209,6 @@ hr {
     width: 80%;
   }
   .mute {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     overflow-x: scroll;
   }
   .content_table th,
@@ -2071,6 +2220,9 @@ hr {
 @media (max-width: 767px) {
   nav {
     padding: 25px 20px;
+  }
+  .pagination_case .f_pagination {
+    width: 70%;
   }
   .main_container {
     margin-top: 130px;
@@ -2085,6 +2237,14 @@ hr {
   .content_table th,
   .content_table td {
     min-width: 230px;
+  }
+  .content_table th:first-child,
+  .content_table td:first-child {
+    min-width: 90px;
+  }
+  .content_table th:last-child,
+  .content_table td:last-child {
+    min-width: 300px;
   }
   nav ul {
     display: -webkit-box;
@@ -2180,6 +2340,18 @@ hr {
   .tabs .from_to {
     top: 66px;
     right: 20px;
+  }
+  #mt {
+    margin-top: 100px;
+  }
+  .details_table {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav {
     display: -webkit-box;
