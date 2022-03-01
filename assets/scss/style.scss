@@ -923,6 +923,115 @@ nav {
       }
     }
     .add_user {
+      position: relative;
+      .edit_users {
+        position: absolute;
+        background-color: $white;
+        z-index: 2;
+        padding: 20px 30px;
+        width: 100%;
+        border-radius: 5px;
+        .users_list {
+          margin-top: 50px;
+          .p_list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            select {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              border: 0;
+              background-color: transparent;
+              outline: 0;
+            }
+            .avalo {
+              display: flex;
+              img {
+                width: 45px;
+                height: 45px;
+                margin-right: 10px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+              h4 {
+                font-family: Nunito;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                margin-top: 10px;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+              }
+            }
+            h5 {
+              font-family: Nunito;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              margin-top: 10px;
+              line-height: 19px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+        }
+        .f_edit {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          .grab {
+            z-index: 2;
+            position: relative;
+            width: 65%;
+            input {
+              background-color: $gray;
+              border: 1px solid #ddd;
+              position: relative;
+            }
+            select {
+              position: absolute;
+              right: 10px;
+              top: 25px;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              border: 0;
+              background-color: transparent;
+              outline: 0;
+            }
+          }
+          button {
+            position: static;
+            margin: 0;
+            width: 30%;
+            margin: 8px 0px;
+            height: 50px;
+            &::before {
+              content: "";
+              margin: 0;
+            }
+          }
+        }
+        p {
+          color: rgba(44, 51, 58, 0.8);
+          margin-top: 15px;
+          display: block;
+          position: relative;
+          margin-left: 35px;
+          &::before {
+            content: url("../../images/all_users.svg");
+            // margin-right: 10px;
+            top: 0;
+            left: -30px;
+            position: absolute;
+          }
+        }
+      }
+      //CO
       h3 {
         font-style: normal;
         font-weight: bold;
@@ -966,9 +1075,8 @@ nav {
     }
     .tabulate {
       max-width: 1022px;
-      // overflow: scroll;
       margin-top: 100px;
-      // width: 100%;
+      position: relative;
       margin-bottom: 50px;
       border: 2px solid #eeeeee;
       border-radius: 5px;
@@ -1799,6 +1907,7 @@ hr {
   nav {
     padding: 25px 20px;
   }
+
   .pagination_case .f_pagination {
     width: 70%;
   }
@@ -1918,6 +2027,10 @@ hr {
   .tabs .from_to {
     top: 66px;
     right: 20px;
+  }
+  .change_password {
+    width: 50%;
+    right: 30px;
   }
   #mt {
     margin-top: 100px;
@@ -2265,7 +2378,8 @@ hr {
       display: flex;
       justify-content: space-between;
       span {
-        width: 165px;
+        max-width: 165px;
+        width: 45%;
         height: 50px;
         display: flex;
         justify-content: center;
@@ -2282,7 +2396,8 @@ hr {
       }
       button {
         margin: 0;
-        width: 165px;
+        max-width: 165px;
+        width: 45%;
         height: 50px;
         background-color: $pk;
         color: $white;

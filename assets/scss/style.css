@@ -1208,6 +1208,143 @@ nav .hamburger {
   color: #d982aa;
 }
 
+.tabs .t_content .add_user {
+  position: relative;
+}
+
+.tabs .t_content .add_user .edit_users {
+  position: absolute;
+  background-color: #fff;
+  z-index: 2;
+  padding: 20px 30px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.tabs .t_content .add_user .edit_users .users_list {
+  margin-top: 50px;
+}
+
+.tabs .t_content .add_user .edit_users .users_list .p_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tabs .t_content .add_user .edit_users .users_list .p_list select {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}
+
+.tabs .t_content .add_user .edit_users .users_list .p_list .avalo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs .t_content .add_user .edit_users .users_list .p_list .avalo img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tabs .t_content .add_user .edit_users .users_list .p_list .avalo h4 {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.tabs .t_content .add_user .edit_users .users_list .p_list h5 {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.tabs .t_content .add_user .edit_users .f_edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.tabs .t_content .add_user .edit_users .f_edit .grab {
+  z-index: 2;
+  position: relative;
+  width: 65%;
+}
+
+.tabs .t_content .add_user .edit_users .f_edit .grab input {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.tabs .t_content .add_user .edit_users .f_edit .grab select {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}
+
+.tabs .t_content .add_user .edit_users .f_edit button {
+  position: static;
+  margin: 0;
+  width: 30%;
+  margin: 8px 0px;
+  height: 50px;
+}
+
+.tabs .t_content .add_user .edit_users .f_edit button::before {
+  content: "";
+  margin: 0;
+}
+
+.tabs .t_content .add_user .edit_users p {
+  color: rgba(44, 51, 58, 0.8);
+  margin-top: 15px;
+  display: block;
+  position: relative;
+  margin-left: 35px;
+}
+
+.tabs .t_content .add_user .edit_users p::before {
+  content: url("../../images/all_users.svg");
+  top: 0;
+  left: -30px;
+  position: absolute;
+}
+
 .tabs .t_content .add_user h3 {
   font-style: normal;
   font-weight: bold;
@@ -1256,6 +1393,7 @@ nav .hamburger {
 .tabs .t_content .tabulate {
   max-width: 1022px;
   margin-top: 100px;
+  position: relative;
   margin-bottom: 50px;
   border: 2px solid #eeeeee;
   border-radius: 5px;
@@ -2337,6 +2475,10 @@ hr {
     top: 66px;
     right: 20px;
   }
+  .change_password {
+    width: 50%;
+    right: 30px;
+  }
   #mt {
     margin-top: 100px;
   }
@@ -2718,7 +2860,8 @@ hr {
 }
 
 .log .change_password .sub_ span {
-  width: 165px;
+  max-width: 165px;
+  width: 45%;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2741,7 +2884,8 @@ hr {
 
 .log .change_password .sub_ button {
   margin: 0;
-  width: 165px;
+  max-width: 165px;
+  width: 45%;
   height: 50px;
   background-color: #d982aa;
   color: #fff;

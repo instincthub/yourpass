@@ -9,6 +9,15 @@ let changePassword = document.querySelector(".changePassword");
 let claimPassword = document.querySelector(".change_password");
 let removePasswordForm = document.querySelector("#pass_form");
 
+if (eventBtn) {
+  eventBtn.addEventListener("click", () => {
+    overLay.classList.add("showevent");
+
+    closeForm.addEventListener("click", () => {
+      overLay.classList.remove("showevent");
+    });
+  });
+}
 // Intialize this block to remove devices at "Where you are logged in"
 for (let e = 0; e < removeDevice.length; e++) {
   const forDelete = removeDevice[e];
@@ -18,19 +27,11 @@ for (let e = 0; e < removeDevice.length; e++) {
 }
 
 // Change Users Password
-changePassword.addEventListener("click", () => {
-  claimPassword.classList.add("active");
-  removePasswordForm.addEventListener("click", () => {
-    claimPassword.classList.remove("active");
-  });
-});
-
-if (eventBtn) {
-  eventBtn.addEventListener("click", () => {
-    overLay.classList.add("showevent");
-
-    closeForm.addEventListener("click", () => {
-      overLay.classList.remove("showevent");
+if (changePassword) {
+  changePassword.addEventListener("click", () => {
+    claimPassword.classList.add("active");
+    removePasswordForm.addEventListener("click", () => {
+      claimPassword.classList.remove("active");
     });
   });
 }
