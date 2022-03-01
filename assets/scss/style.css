@@ -1232,7 +1232,7 @@ nav .hamburger {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .tabs .t_content .add_user .edit_users .users_list .p_list select {
