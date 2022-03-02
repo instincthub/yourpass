@@ -5,6 +5,12 @@ const rotate = document.querySelectorAll(".resend");
 const arrow = document.querySelectorAll("#imgg");
 let removeDevice = document.querySelectorAll("#remove_device");
 let deviceTracks = document.querySelector(".track");
+
+// SETTINGS VARIABLES
+
+let triggerNewUser = document.querySelector(".trigger_new_user");
+let closeEdit = document.querySelector(".close_overlay");
+let editUsers = document.querySelector(".edit_users");
 let changePassword = document.querySelector(".changePassword");
 let claimPassword = document.querySelector(".change_password");
 let removePasswordForm = document.querySelector("#pass_form");
@@ -35,3 +41,11 @@ if (changePassword) {
     });
   });
 }
+
+triggerNewUser.addEventListener("click", () => {
+  editUsers.style.display = "block";
+  closeEdit.addEventListener("click", () => {
+    editUsers.style.display = "none";
+  });
+  console.log("Clickes");
+});

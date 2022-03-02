@@ -660,14 +660,14 @@ nav .hamburger {
   background: #f4f4f4;
   height: 100px;
   display: block;
-  width: 100px;
+  width: 25%;
   margin-right: 70px;
   border-radius: 5px;
   margin-top: 25px;
 }
 
 .overlay .backdrop .wrap form .upload .file .faint input {
-  width: 100px;
+  width: 25%;
   cursor: pointer;
   height: 100px;
   opacity: 0;
@@ -678,12 +678,12 @@ nav .hamburger {
   height: 36px;
   position: absolute;
   top: 29px;
-  left: 34px;
+  left: 50px;
   margin: 0;
 }
 
 .overlay .backdrop .wrap form .upload .file img {
-  width: 170px;
+  width: 50%;
   height: 120px;
   border-radius: 5px;
   -o-object-fit: cover;
@@ -885,6 +885,10 @@ nav .hamburger {
 .e_cards .main_card .card_d .lap .f_lap {
   position: relative;
   left: -15px;
+}
+
+.active {
+  display: block;
 }
 
 .detail_wrap .back-img a {
@@ -1218,11 +1222,22 @@ nav .hamburger {
   z-index: 2;
   padding: 20px 30px;
   width: 100%;
+  display: none;
+  position: relative;
   border-radius: 5px;
 }
 
 .tabs .t_content .add_user .edit_users .users_list {
   margin-top: 50px;
+}
+
+.tabs .t_content .add_user .edit_users .users_list .close_overlay {
+  position: absolute;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  cursor: pointer;
 }
 
 .tabs .t_content .add_user .edit_users .users_list .p_list {
@@ -2066,6 +2081,10 @@ nav .hamburger {
   text-align: left;
 }
 
+.edit_users.abled {
+  display: block;
+}
+
 hr {
   border: 1px solid rgba(51, 51, 51, 0.6);
 }
@@ -2475,6 +2494,11 @@ hr {
     top: 66px;
     right: 20px;
   }
+  .tabs .t_content .add_user .edit_users {
+    width: 55%;
+    position: absolute;
+    right: 0;
+  }
   .change_password {
     width: 50%;
     right: 30px;
@@ -2814,6 +2838,7 @@ hr {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 75%;
   }
   .tabs .t_content form .ment label {
     width: 47%;
@@ -2833,6 +2858,9 @@ hr {
   }
   .e_cards .main_card {
     width: 48.5%;
+  }
+  .overlay .backdrop .wrap form .upload .file {
+    width: 75%;
   }
 }
 
