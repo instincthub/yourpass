@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YourPass - Manage how many people in your organisation</title>
-    <meta name="description" content="Management appilication for collating data in an organisation">
+    <title>Events Details - Information about each Events</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +27,7 @@
             <h3>Noah Olatoye <br /><span>Admin</span></h3>
           </div>
 
-          <a href="index.html" class="current-list">
+          <a href="">
             <svg
               width="28"
               height="27"
@@ -44,7 +43,7 @@
             <h3>Overview</h3>
           </a>
 
-          <a href="stats.html" class="">
+          <a href="" class="">
             <svg
               width="27"
               height="27"
@@ -60,7 +59,7 @@
             <h3>Statistics</h3>
           </a>
 
-          <a href="adminevent.html" class="">
+          <a href="adminevent.html" class="current-list">
             <svg
               width="27"
               height="27"
@@ -84,7 +83,7 @@
             <h3>Events</h3>
           </a>
 
-          <a href="attendee.html" class="">
+          <a href="" class="">
             <svg
               width="27"
               height="27"
@@ -104,7 +103,7 @@
             <h3>Attendee</h3>
           </a>
 
-          <a href="settings.html" class="">
+          <a href="" class="">
             <svg
               width="27"
               height="27"
@@ -137,10 +136,11 @@
           <div class="line3"></div>
         </div>
       </nav>
+
       <!-- NAVIGATION2 -->
       <div class="main_container">
         <div class="nav2">
-          <h2>Chavron Pvt Ltd.</h2>
+          <h2 class="gh2">Chavron Pvt Ltd.</h2>
           <div class="avatar_bell">
             <img src="images/bell.svg" alt="notification on arrival" />
             <div class="avalon">
@@ -151,357 +151,44 @@
         </div>
       </div>
 
-      <button class="" id="events">Add Events</button>
+      <!-- ===========
+        CARD DETAILS
+    ====================== -->
+      <div class="container detail_wrap rr_req">
+        <form action="cards.html">
+          <div class="back-img back_">
+            <a href="cards.html">Back</a>
+          </div>
 
-      <!-- $CARDS,LOCATION,UPCOMING -->
-      <div id="main">
-        <div class="four_cards">
-          <div class="card">
-            <div class="icon">
-              <img src="images/total-events.svg" alt="" />
-              <h3>
-                Total <br />
-                Events
-              </h3>
+          <img src="images/card4.png" />
+          <div class="dd_entry">
+            <button type="submit" class="update_data">Update</button>
+            <label for="">
+              Event Overview
+              <textarea name="" id=""></textarea>
+            </label>
+
+            <div class="req">
+              <label for="date">
+                Date
+                <input type="date" />
+              </label>
+              <label for="date">
+                Location
+                <input type="text" />
+              </label>
+              <label for="date">
+                Tickets
+                <input type="text" />
+              </label>
             </div>
-            <div class="icon">
-              <h2 style="margin-top: 80px">30</h2>
-            </div>
+            <label for="description">
+              Description
+              <textarea name="Description" class="descript"></textarea>
+            </label>
           </div>
-          <div class="card">
-            <div class="icon">
-              <img src="images/upcoming..svg" alt="" />
-              <h3>
-                Upcoming<br />
-                Events
-              </h3>
-            </div>
-            <div class="icon">
-              <select name="sort">
-                <option value="today">Today</option>
-                <option value="today">Today</option>
-                <option value="today">Today</option>
-              </select>
-              <h2>22</h2>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon">
-              <img src="images/ongog.svg" alt="" />
-              <h3>
-                Upcoming<br />
-                Events
-              </h3>
-            </div>
-            <div class="icon">
-              <select name="sort">
-                <option value="today">Today</option>
-                <option value="today">Today</option>
-                <option value="today">Today</option>
-              </select>
-              <h2>22</h2>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon">
-              <img src="images/checked.svg" alt="" />
-              <h3>
-                Upcoming<br />
-                Events
-              </h3>
-            </div>
-            <div class="icon">
-              <select name="sort">
-                <option value="today">Today</option>
-                <option value="today">Today</option>
-                <option value="today">Today</option>
-              </select>
-              <h2>22</h2>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
-
-      <!-- SEARCHES,FILTERS -->
-      <div class="s_step">
-        <!-- ========
-        TABLE HEADER
-        ============= -->
-        <div class="ff_side">
-          <div class="table_head">
-            <div class="head_input">
-              <div class="c_barcode">
-                <h3>Action <span>(0)</span></h3>
-                <div class="m_input">
-                  <input type="text" placeholder="Email,Mobile" />
-                  <img src="images/search.svg" class="abss" />
-                </div>
-                <img src="images/barcode.svg" alt="barcode" />
-              </div>
-
-              <div class="act-2">
-                <h3 class="m-action">Action <span>(0)</span></h3>
-                <select name="sort" id="">
-                  <option value="">Recent</option>
-                  <option value="">Recents</option>
-                  <option value="">Name</option>
-                </select>
-              </div>
-
-              <div class="it_head">
-                <div class="tt-h">
-                  <input type="checkbox" />
-                  <h3>FULLNAME</h3>
-                  <h3 class="g_list">EMAIL</h3>
-                </div>
-
-                <h3 style="margin-top: 10px">STATUS</h3>
-              </div>
-            </div>
-          </div>
-          <!-- =======
-          MAIN TABLE
-          ============= -->
-          <div class="tt-1">
-            <ul>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">noaholatoye@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">msodq2018@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">msodq2018@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">durosakin444@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">msodq2018@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">alotosin5544@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">msodq2018@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">msodq2018@gmail.com</h3>
-                </div>
-
-                <h3>Done</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">olusegun18@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">olusegun18@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-              <li>
-                <div class="tt-table">
-                  <input type="checkbox" />
-                  <h3>Redemmed Christian</h3>
-                  <h3 class="g_list">olusegun18@gmail.com</h3>
-                </div>
-
-                <h3>Attending</h3>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- =================
-        ASIDES,UPCOMING AND MAP
-        ========================== -->
-        <div class="aside_wrapper">
-          <!-- UPCOMING -->
-          <div class="upcoming">
-            <h2>UPCOMING EVENTS</h2>
-            <div class="wrap_event">
-              <div class="event">
-                <img src="images/img5.svg" alt="" />
-                <div class="lct">
-                  <h3>ConveyUX</h3>
-                  <p><img src="images/location.svg" alt="" /> Kent, Utah</p>
-                </div>
-              </div>
-
-              <div class="event">
-                <img src="images/img1.png" alt="" />
-                <div class="lct">
-                  <h3>World Design Summit</h3>
-                  <p>
-                    <img src="images/location.svg" alt="" /> Coppell, Virgina
-                  </p>
-                </div>
-              </div>
-              <div class="event">
-                <img src="images/img2.png" alt="" />
-                <div class="lct">
-                  <h3>World Design</h3>
-                  <p>
-                    <img src="images/location.svg" alt="" /> Coppell, Virgina
-                  </p>
-                </div>
-              </div>
-              <div class="event">
-                <img src="images/img3.png" alt="" />
-                <div class="lct">
-                  <h3>Regime Corner</h3>
-                  <p>
-                    <img src="images/location.svg" alt="" /> Coppell, Virgina
-                  </p>
-                </div>
-              </div>
-              <div class="event" id="last_cards">
-                <img src="images/img4.png" alt="" />
-                <div class="lct">
-                  <h3>World Design</h3>
-                  <p><img src="images/location.svg" alt="" /> Lagos, Nigeria</p>
-                </div>
-              </div>
-
-              <!-- <div class="last_cards"> -->
-              <div class="event" id="last_cards">
-                <img src="images/img5.svg" alt="" />
-                <div class="lct">
-                  <h3>World Design</h3>
-                  <p><img src="images/location.svg" alt="" /> Lagos, Nigeria</p>
-                </div>
-                <!-- </div> -->
-              </div>
-            </div>
-          </div>
-          <!-- UPCOMING ENDS -->
-        </div>
-
-        <!-- ===========
-        GOOGLE MAP
-        ============== -->
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.515387499332!2d3.4088463137578646!3d6.4561897953292755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b3716f4faff%3A0xdd6eb69120a3822f!2sIkoyi%20Dolphin%20Estate%2C%20Corporation%20Dr%2C%20Dolphine%20Estate%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1643642499530!5m2!1sen!2sng"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </div>
-
-      <!--=============================================
-      OVERLAY FOR ADDING EVENTS FORM AND UPLOAD IMAGE
-      ================================================== -->
-      <div class="overlay">
-        <div class="backdrop">
-          <div class="wrap">
-            <h2>Create Events</h2>
-            <form action="index.html" method="get">
-              <label for="text">Tittle</label>
-              <input type="text" />
-              <label for="textarea">Description</label>
-              <textarea name=""></textarea>
-              <label for="location">Location</label>
-              <input type="text" />
-              <div class="date_time">
-                <label for="date"
-                  >Date
-                  <div class="v-date">
-                    <input type="date" />
-                    <img src="images/cld.svg" class="calendar" />
-                  </div>
-                </label>
-                <label for="time"
-                  >Time
-                  <input type="time" />
-                </label>
-              </div>
-
-              <div class="upload">
-                <h4>Add Images</h4>
-                <p>Upload cover image for the banner (1080 by 240).</p>
-                <div class="file">
-                  <label for="file" class="faint">
-                    <input
-                      type="file"
-                      id="img_changer"
-                      onchange="readFile();"
-                    />
-                    <img src="images/bx_bxs-image-add.svg" class="add_here" />
-                  </label>
-                  <img
-                    src="images/img2.png"
-                    alt="Hey,We noticed you havent add image here."
-                    id="result"
-                  />
-                </div>
-              </div>
-
-              <div class="submission">
-                <button type="submit" class="b_pnk">Create</button>
-                <h3 class="b_transparent">Cancel</h3>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- OVERLAY ENDS -->
     </section>
 
     <!--==============
@@ -512,22 +199,5 @@
     <script src="assets/js/form.js"></script>
 
     <!-- This event trigger the images Selection -->
-    <script>
-      function readFile() {
-        var reader = new FileReader();
-        var file = document.querySelector("#img_changer").files[0];
-
-        reader.onload = function (e) {
-          document.querySelector("#result").src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-
-        if (files[0].size > 2097152) {
-          alert("File is too big!");
-
-          this.value = "";
-        }
-      }
-    </script>
   </body>
 </html>
