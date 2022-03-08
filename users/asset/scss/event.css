@@ -1,0 +1,73 @@
+.eventsbanner {
+  background-color: teal;
+  height: 420px;
+  width: 100%;
+}
+
+.eventsbanner .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 420px;
+  position: relative;
+}
+
+.eventsbanner .wrap .ff_content {
+  max-width: 510px;
+}
+
+.eventsbanner .wrap .ff_content h1 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.eventsbanner .wrap .ff_content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.eventsbanner .wrap select {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  max-width: 152px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #ffffff;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  color: #333333;
+  background-position-y: 115px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 2px;
+  padding: 1rem;
+  padding-right: 1.5rem;
+}
+
+.all_recommend h2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.all_recommend .card_wrap .cards {
+  margin: 15px 0;
+}
+/*# sourceMappingURL=event.css.map */

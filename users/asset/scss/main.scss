@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Nunito Sans", sans-serif;
-  // overflow: hidden;
+  overflow-x: hidden;
 }
 html,
 body {
@@ -56,6 +56,7 @@ nav {
   background: #ffffff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
   height: 70px;
+  overflow-x: hidden;
 }
 .navbar {
   display: flex;
@@ -75,7 +76,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 48%;
-
+    z-index: 10;
     li {
       display: flex;
       justify-content: space-between;
@@ -337,11 +338,85 @@ img {
   }
 }
 
-.d_pic {
-  position: relative;
+.owl-dots {
+  margin-top: 10px;
+  text-align: center;
+}
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  outline: 0;
+  border-radius: 50%;
+  background: rgba(51, 44, 44, 0.1) !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active {
+  background: #ffffff !important;
+}
+.dots_button {
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  display: flex;
+  justify-content: center;
+}
+.owl-carousel .owl-item img {
+  width: auto !important;
+  display: inline !important;
+}
+.owl-nav {
+  position: absolute;
+  left: 33%;
   margin-top: 30px;
+}
+
+.owl-nav .owl-next:hover .c_change path,
+.owl-nav .owl-prev:hover .c_change path {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  fill: var(--color-white) !important;
+}
+.nextIcon:hover,
+.nextIcon:active,
+.prevIcon:hover,
+.prevIcon:active {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid var(--color-white) !important;
+  background-color: var(--color-purple) !important;
+}
+.prevIcon {
+  /* background-color: var(--color-purple); */
+  border: 3px solid var(--black);
+  width: 55px;
+  height: 55px;
+  transition: 0.3s ease;
+  padding: 10px;
+  margin-right: 25px;
+  border-radius: 50%;
+}
+.nextIcon {
+  /* background-color: var(--color-purple); */
+  border: 3px solid var(--black);
+  width: 55px;
+  height: 55px;
+  transition: 0.3s ease;
+  padding: 10px;
+  margin-right: 25px;
+  border-radius: 50%;
+}
+.d_pic {
+  // position: relative;
+  margin: 30px auto;
+  display: flex;
+  width: 80%;
   img {
-    position: absolute;
+    // position: absolute;
     z-index: 4;
     object-fit: cover;
   }
@@ -350,21 +425,98 @@ img {
     width: 78px;
     height: 90px;
     z-index: 10;
-    top: 70px;
-    left: 50px;
   }
   .tt {
     width: 218px;
     height: 200px;
-    right: 20px;
   }
 }
 
 .round {
   background: url(../../asset/imgs/section_lap.png) no-repeat top center/cover;
-  height: auto;
-  padding-bottom: 30px;
+  height: 850px;
   margin-top: 100px;
+  h2 {
+    padding-top: 300px;
+    max-width: 460px;
+    // font-family: Nunito;
+    font-size: 30px;
+    // font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .round_content {
+    margin: 30px auto;
+    width: 100%;
+    // max-width: 1366px;
+    .card {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 25px;
+      width: 100%;
+      clear: both;
+      min-height: 278px;
+      margin-bottom: 30px;
+      position: relative;
+      .abss {
+        position: absolute;
+        right: 20px;
+        // margin-top: 20px;
+        bottom: 20px;
+      }
+      .abs {
+        position: absolute;
+        right: 20px;
+      }
+      p {
+        // font-family: Nunito;
+        font-size: 14px;
+        // font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin: 10px 0;
+      }
+      .quote {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+      }
+      .name {
+        margin-top: 30px;
+        display: flex;
+
+        .main_name {
+          margin-right: 10px;
+          h3 {
+            // font-family: Nunito;
+            font-size: 20px;
+            // font-style: normal;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0.02em;
+            text-align: right;
+          }
+          p {
+            margin: 0;
+            font-size: 14px;
+            // font-style: normal;
+            font-weight: 500;
+          }
+        }
+        img {
+          width: 45px;
+          height: 45px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
 
 footer {
@@ -416,23 +568,6 @@ footer {
       text-align: left;
     }
   }
-  // .c_r {
-  //   p {
-  //     text-align: center;
-  //     margin: 20px auto;
-  //   }
-  // }
-  // .footer_pic {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   width: 80%;
-  //   margin: 20px auto;
-  //   img {
-  //     width: 30px;
-  //     height: 30px;
-  //     object-fit: cover;
-  //   }
-  // }
 }
 
 @media (min-width: 890px) {
@@ -478,6 +613,59 @@ footer {
   .hamburger {
     display: none;
   }
+  .round {
+    position: relative;
+    margin-top: -80px;
+  }
+  .d_pic {
+    margin-right: 30px;
+    width: 40%;
+    .tt {
+      width: 300px;
+      height: 259px;
+    }
+    .dd {
+      position: relative;
+      top: 120px;
+      right: -50px;
+      width: 120px;
+      height: 157px;
+    }
+  }
+  .folic_wrap {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    .first_folic {
+      width: 33%;
+      h1 {
+        margin: 0;
+      }
+    }
+    ul {
+      margin-top: 20px;
+    }
+  }
+  .c_r {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-direction: row-reverse;
+    .footer_pic {
+      display: flex;
+      justify-content: space-between;
+      width: 25%;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    p {
+      margin: 0;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  }
   .download_wrap {
     display: flex;
     justify-content: space-between;
@@ -521,6 +709,12 @@ footer {
 @media (max-width: 768px) {
   h1 {
     font-size: 25px;
+  }
+  .round {
+    height: 710px;
+    h2 {
+      padding-top: 154px;
+    }
   }
   .c_r {
     p {
@@ -575,6 +769,9 @@ footer {
       width: 610px;
       height: 420px;
     }
+  }
+  .first_wrap {
+    width: 50%;
   }
   .cc_m .gutter_wrapper img {
     height: 320px;
