@@ -2,26 +2,20 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
   font-family: "Nunito Sans", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 html,
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background-color: #f4f4f4;
   scroll-behavior: smooth;
 }
-a {
-  color: #333333;
-  transition: 0.4s;
-}
-a:hover {
-  color: rgba(14, 11, 11, 0.7);
-}
+
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -72,7 +66,7 @@ p {
 nav {
   background: #ffffff;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
   height: 70px;
   overflow-x: hidden;
 }
@@ -82,8 +76,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar h1 {
@@ -104,8 +98,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 48%;
   z-index: 10;
 }
@@ -115,8 +109,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 40%;
 }
 
@@ -125,7 +119,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   width: 40%;
 }
 
@@ -196,7 +190,7 @@ nav {
   top: 350px;
   border-radius: 2px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .ff_features {
@@ -222,11 +216,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   margin-bottom: 15px;
   background: rgba(196, 196, 196, 0.2);
@@ -253,7 +247,7 @@ nav {
 .cc_m .gutter_wrapper img {
   width: 317.38px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 200px;
   position: relative;
   left: 22px;
@@ -272,7 +266,7 @@ img {
 
 .cards img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .cards .card_content {
@@ -302,8 +296,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .cards .card_content .dts h6 {
@@ -350,8 +344,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 25px;
 }
 
@@ -420,8 +414,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .owl-carousel .owl-item img {
@@ -489,7 +483,7 @@ img {
 .d_pic img {
   z-index: 4;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .d_pic .dd {
@@ -560,7 +554,7 @@ img {
   width: 20px;
   height: 20px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .round .round_content .card .name {
@@ -592,7 +586,7 @@ img {
   width: 45px;
   height: 45px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
@@ -600,7 +594,7 @@ footer {
   height: auto;
   background-color: #ffffff;
   -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.16);
-  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.16);
   padding-top: 30px;
   padding-bottom: 20px;
 }
@@ -659,10 +653,10 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .card_wrap .cards {
     width: 33%;
@@ -679,21 +673,37 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .cc_m .gutter_wrapper .gutter {
     width: 45%;
+  }
+  .fill_form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .form1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form1 label {
+    width: 50%;
   }
   .card_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .card_wrap .cards {
     width: 48%;
@@ -729,8 +739,8 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .folic_wrap .first_folic {
     width: 33%;
@@ -746,21 +756,21 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 20px 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .c_r .footer_pic {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 25%;
   }
   .c_r .footer_pic img {
@@ -777,8 +787,8 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .download_wrap .download {
     width: 50%;
@@ -796,8 +806,8 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .ff_features .features .ff_1 {
     width: 30%;
@@ -839,8 +849,8 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 80%;
     margin: 20px auto;
   }
@@ -848,7 +858,7 @@ footer ul li {
     width: 30px;
     height: 30px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .container {
     padding: 0 20px;
@@ -859,26 +869,26 @@ footer ul li {
     width: 30%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     top: 70px;
     padding: 20px;
     right: 0;
     -webkit-transform: translateX(768px);
-    transform: translateX(768px);
+            transform: translateX(768px);
     -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.16);
-    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.16);
+            box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.16);
   }
   .nav_links.activate {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+            transform: translateX(0px);
   }
   .navbar .nav_links li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 5px;
     opacity: 0;
   }
@@ -911,10 +921,10 @@ footer ul li {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .card_wrap .cards {
     width: 24.5%;
@@ -925,12 +935,12 @@ footer ul li {
   from {
     opacity: 0.2;
     -webkit-transform: translateX(50px);
-    transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
     -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -938,18 +948,18 @@ footer ul li {
   from {
     opacity: 0.2;
     -webkit-transform: translateX(50px);
-    transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
     -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-  transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -960,6 +970,6 @@ footer ul li {
 
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
-  transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 /*# sourceMappingURL=main.css.map */

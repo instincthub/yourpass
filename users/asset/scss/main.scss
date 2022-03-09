@@ -598,7 +598,18 @@ footer {
       }
     }
   }
-
+  .fill_form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .form1 {
+    display: flex;
+    justify-content: space-between;
+    label {
+      width: 50%;
+    }
+  }
   .card_wrap {
     display: flex;
     justify-content: space-between;

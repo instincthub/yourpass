@@ -1,7 +1,7 @@
 // THIS CSS FOCUS MAJORLY ON ALL EVENTS
 
 .eventsbanner {
-  background-color: teal;
+  background: url(../../asset/imgs/backgroung.png) no-repeat center center/cover;
   height: 420px;
   width: 100%;
   .wrap {
@@ -55,7 +55,10 @@
     }
   }
 }
-
+.drive {
+  text-align: center;
+  margin: 0 auto;
+}
 .all_recommend {
   h2 {
     margin-top: 50px;
@@ -66,4 +69,164 @@
       margin: 15px 0;
     }
   }
+}
+
+.ff_details {
+  margin-top: 30px;
+  h2 {
+    // font-family: Nunito;
+    font-size: 24px;
+    // font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .ff_location {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .tickets {
+      h4 {
+        // font-family: Nunito;
+        font-size: 16px;
+        // font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 6px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+  .about_events {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 25px;
+
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: left;
+    }
+  }
+}
+
+.fill_form {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+
+  h3 {
+    // font-family: Nunito;
+    font-size: 24px;
+    // font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 7px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+  }
+
+  .main {
+    text-align: left;
+    margin-top: 30px;
+    h3 {
+      // font-family: Nunito;
+      font-size: 18px;
+      // font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 7px;
+    }
+    label {
+      font-size: 16px;
+      font-weight: 700;
+      margin-right: 15px;
+    }
+    .d_form {
+      .form1 {
+        label {
+          input {
+            width: 100%;
+            margin-bottom: 23px;
+            margin-top: 6px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            border: 0;
+          }
+        }
+      }
+      button {
+        max-width: 400px;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        height: 50px;
+        background-color: #bc658d;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 18px;
+        border: 0;
+      }
+    }
+  }
+}
+
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin-bottom: 25px;
+}
+
+.radio-item input[type="radio"] {
+  display: none;
+}
+
+.radio-item label {
+  color: #333333;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #333333;
+  background-color: transparent;
+}
+
+.radio-item input[type="radio"]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  content: " ";
+  display: block;
+  background: #bc658d;
 }
