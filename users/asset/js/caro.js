@@ -6,17 +6,21 @@ const nextIcon =
 $(".round_content").owlCarousel({
   margin: 10,
   autoplay: true,
+  // itemsMobile: [600, 1],
   loop: true,
   //   nav: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: true,
   //   navText: [prevIcon, nextIcon],
+  responsiveClass: true,
   responsive: {
     0: {
       items: 1,
+      // nav: true,
     },
-    650: {
+    600: {
       items: 2,
+      // nav: false,
     },
     768: {
       items: 2,
