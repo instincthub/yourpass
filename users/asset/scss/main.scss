@@ -5,13 +5,16 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Nunito Sans", sans-serif;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 html,
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background-color: #f4f4f4;
   scroll-behavior: smooth;
+}
+a {
+  color: #333333;
 }
 h1 {
   font-size: 40px;
@@ -623,6 +626,9 @@ footer {
 @media (min-width: 768px) {
   .hamburger {
     display: none;
+  }
+  .ff_details .ff_location {
+    width: 50%;
   }
   .round {
     position: relative;
